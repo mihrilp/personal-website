@@ -1,0 +1,14 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .circles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .title {
+    font-size: 35px;
+  }
+}

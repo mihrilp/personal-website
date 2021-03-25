@@ -18,40 +18,36 @@ body {
     justify-content: space-around;
     text-align: center;
     font-family: $font-family;
-    height: 100vh;
     font-size: 14px;
     font-weight: 200;
   }
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  .navbar {
+.navbar {
+  width: 35%;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8b8d91;
+  li {
+    cursor: pointer;
+  }
+  li:first-child:hover,
+  li:first-child:active {
+    color: #f24d1d;
+  }
+  li:not(:first-child):not(:last-child):hover {
+    color: #a259ff;
+  }
+  li:last-child:hover,
+  li:last-child:active {
+    color: #44d55c;
+  }
+
+  .header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 35%;
-    list-style: none;
-    font-size: 18px;
-    font-weight: 400;
-    color: #8b8d91;
-    li {
-      cursor: pointer;
-    }
-    li:first-child:hover,
-    li:first-child:active {
-      color: #f24d1d;
-    }
-    li:not(:first-child):not(:last-child):hover {
-      color: #a259ff;
-    }
-    li:last-child:hover,
-    li:last-child:active {
-      color: #44d55c;
-    }
   }
   button {
     background-color: #535bd9;
@@ -71,20 +67,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: $secondary-color;
   .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    background-color: $primary-color;
   }
-}
-
-.circles {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.title {
-  font-size: 35px;
+  .projects {
+    background-color: $secondary-color;
+  }
+  .blog {
+    background-color: $primary-color;
+  }
+  .contact {
+    background-color: $secondary-color;
+  }
 }
