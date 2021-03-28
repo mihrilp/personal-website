@@ -2,33 +2,27 @@ import React from "react";
 import "./projects.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import Project from "../../components/project/Project";
+import Calculator from "../../components/icons/calculator";
+import Todo from "../../components/icons/todo";
+import Crypto from "../../components/icons/crypto";
 
 const Projects = ({}) => {
   return (
-    <Container>
-      <Row>
+    <Container className="projects">
+      <Col className="title">
+        <p>Projects</p>
+      </Col>
+      <Row className="projectList">
         <Col>
-          <Project
-            text="neque sint vel facilis velit cumque, omnis beatae explicabo
-                  eum repellendus impedit, eligendi consequatur officia hic
-                  odio! Sunt repudiandae eligendi voluptatibus."
-            imageUri="image1.jpg"
-          />
+          <Project icon={<Calculator />} projectName="scientific calculator" />
+        </Col>
+        <Col>
+          <Project icon={<Todo />} projectName="to-do" />
         </Col>
         <Col>
           <Project
-            text="neque sint vel facilis velit cumque, omnis beatae explicabo
-                  eum repellendus impedit, eligendi consequatur officia hic
-                  odio! Sunt repudiandae eligendi voluptatibus."
-            imageUri="image2.jpg"
-          />
-        </Col>
-        <Col>
-          <Project
-            text="neque sint vel facilis velit cumque, omnis beatae explicabo
-          eum repellendus impedit, eligendi consequatur officia hic
-          odio! Sunt repudiandae eligendi voluptatibus."
-            imageUri="image3.jpg"
+            icon={<Crypto />}
+            projectName="cryptocurrency price notifications"
           />
         </Col>
       </Row>

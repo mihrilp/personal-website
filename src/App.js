@@ -2,43 +2,48 @@ import "./mysass.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import Section from "./section/Section";
 import Projects from "./contents/projects/Projects";
-import About from "./contents/about/About";
 import Blogs from "./contents/blogs/Blogs";
+import Image from "./components/icons/image";
 
 function App() {
   return (
     <Container>
-      <Row>
-        <Col>
+      <Row className="header">
+        <Col md={8}>
           <ul className="navbar">
-            <li>About</li>
             <li>Projects</li>
             <li>Blog</li>
+            <li>Contact</li>
           </ul>
         </Col>
-        <Col>
-          <button href="#">Contact Me</button>
+      </Row>
+      <Row className="about">
+        <Col md={4}>
+          <Image />
+        </Col>
+        <Col md={8}>
+          <p className="title">I'm Mihriban Alp</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+            maxime quo? Odio vero dolor eaque quos beatae sunt quidem,
+            reprehenderit, id nobis explicabo veritatis suscipit quaerat cum
+            maiores eum blanditiis, hic deserunt repudiandae quae! Ipsa ab id et
+            modi hic velit quo! Iusto quisquam numquam porro temporibus,
+            delectus illo quod.
+          </p>
         </Col>
       </Row>
-      <Row>
-        <div className="main">
-          <div className="about">
-            <Section
-              title="I'm Mihriban Alp."
-              color="#f24d1d"
-              content={<About />}
-            />
-          </div>
-          <div className="projects">
-            <Section title="Projects" color="#a259ff" content={<Projects />} />
-          </div>
-          <div className="blog">
-            <Section title="Blog" color="#44d55c" color={<Blogs />} />
-          </div>
-          <div className="contact">
-            <h1>Form</h1>
-          </div>
-        </div>
+      <Row className="projects">
+        <Projects />
+      </Row>
+      <Row className="blogs">
+        <Col>
+          <p className="title">Blogs</p>
+        </Col>
+        <Blogs />
+      </Row>
+      <Row className="contact">
+        <p>Form</p>
       </Row>
     </Container>
   );

@@ -2,19 +2,15 @@ import React from "react";
 import "./project.scss";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Project = ({ imageUri, text }) => {
+const Project = ({ icon, projectName }) => {
   return (
-    <Container>
-      <div className="thubnail">
-        <img
-          style={{ width: 200, height: 120 }}
-          src={`./images/${imageUri}`}
-          alt="image"
-        />
-      </div>
-      <div className="statement">
-        <p>{text}</p>
-      </div>
+    <Container className="box">
+      <Row className="icon">
+        <Col>{icon}</Col>
+      </Row>
+      <Row className="projectName">
+        <Col>{projectName}</Col>
+      </Row>
     </Container>
   );
 };

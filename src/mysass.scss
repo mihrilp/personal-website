@@ -18,65 +18,48 @@ body {
     justify-content: space-around;
     text-align: center;
     font-family: $font-family;
-    font-size: 14px;
-    font-weight: 200;
-  }
-}
-
-.navbar {
-  width: 35%;
-  list-style: none;
-  font-size: 18px;
-  font-weight: 400;
-  color: #8b8d91;
-  li {
-    cursor: pointer;
-  }
-  li:first-child:hover,
-  li:first-child:active {
-    color: #f24d1d;
-  }
-  li:not(:first-child):not(:last-child):hover {
-    color: #a259ff;
-  }
-  li:last-child:hover,
-  li:last-child:active {
-    color: #44d55c;
-  }
-
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  button {
-    background-color: #535bd9;
-    width: 150px;
-    height: 30px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
     font-size: 15px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-  }
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  .about {
-    background-color: $primary-color;
-  }
-  .projects {
-    background-color: $secondary-color;
-  }
-  .blog {
-    background-color: $primary-color;
-  }
-  .contact {
-    background-color: $secondary-color;
+    font-weight: 200;
+    .header {
+      margin-bottom: 50px;
+      margin-top: 50px;
+      .navbar {
+        width: 35%;
+        list-style: none;
+        font-size: 20px;
+        font-weight: 400;
+        color: #8b8d91;
+        li {
+          cursor: pointer;
+        }
+        li:first-child:hover,
+        li:first-child:active {
+          color: #a259ff;
+        }
+        li:not(:first-child):not(:last-child):hover {
+          color: #f24d1d;
+        }
+        li:last-child:hover,
+        li:last-child:active {
+          color: #44d55c;
+        }
+      }
+    }
+    .about {
+      margin-bottom: 50px;
+      padding-right: 20px;
+      .title {
+        font-size: 35px;
+      }
+    }
+    .projects {
+      background-color: $secondary-color;
+      margin-bottom: 30px;
+    }
+    .blog {
+    }
+    .contact {
+      background-color: $secondary-color;
+    }
   }
 }
