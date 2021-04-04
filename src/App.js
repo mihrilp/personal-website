@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Projects from "./contents/projects/Projects";
 import Blogs from "./contents/blogs/Blogs";
 import Image from "./components/icons/image";
+import Contact from "./contents/contact/Contact";
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
         <Blogs />
       </Row>
       <Row className="contact">
-        <p>Form</p>
+        <Contact />
       </Row>
     </Container>
   );

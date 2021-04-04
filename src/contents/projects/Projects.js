@@ -13,31 +13,29 @@ const Projects = () => {
         <p>Projects</p>
       </Col>
       <Row className="projectList">
-        <Col md={2}></Col>
-        <Col md={2}>
+        <Col>
           <Project
             icon={<Calculator />}
             projectName="Scientific Calculator"
             linkUrl="https://github.com/mihrilp/scientific-calculator"
           />
         </Col>
-        <Col md={2}>
+        <Col>
           <Project
             icon={<Todo />}
             projectName="To-do App"
             linkUrl="https://github.com/mihrilp/react-todoapp"
           />
         </Col>
-        <Col md={2}>
+        <Col>
           <Project
             icon={<Crypto />}
             projectName="Cryptocurrency Price Notifications"
           />
         </Col>
-        <Col md={2}>
+        <Col>
           <Project icon={<Todo />} projectName="To-do App" />
         </Col>
-        <Col md={2}></Col>
       </Row>
     </Container>
   );
