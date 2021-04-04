@@ -1,6 +1,5 @@
 import "./mysass.scss";
 import { Container, Row, Col } from "react-bootstrap";
-import Section from "./section/Section";
 import Projects from "./contents/projects/Projects";
 import Blogs from "./contents/blogs/Blogs";
 import Image from "./components/icons/image";
@@ -37,9 +36,6 @@ function App() {
         <Projects />
       </Row>
       <Row className="blogs">
-        <Col>
-          <p className="title">Blogs</p>
-        </Col>
         <Blogs />
       </Row>
       <Row className="contact">

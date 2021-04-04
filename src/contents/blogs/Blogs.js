@@ -1,22 +1,28 @@
 import React from "react";
-import "./blogs.css";
+import "./blogs.scss";
 import Blog from "../../components/blog/Blog";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Blogs = () => {
   return (
-    <div className="blog">
-      <ul>
-        <li>
-          <Blog />
-        </li>
-        <li>
-          <Blog />
-        </li>
-        <li>
-          <Blog />
-        </li>
-      </ul>
-    </div>
+    <Container className="blogs">
+      <Col className="title">
+        <p>Blogs</p>
+      </Col>
+      <Row>
+        <ul>
+          <li>
+            <Blog />
+          </li>
+          <li>
+            <Blog />
+          </li>
+          <li>
+            <Blog />
+          </li>
+        </ul>
+      </Row>
+    </Container>
   );
 };
 

@@ -10,12 +10,11 @@ $font-family: "Palanquin", sans-serif;
 }
 
 body {
-  background-color: $primary-color;
+  background-color: $secondary-color;
   color: $text-color;
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     text-align: center;
     font-family: $font-family;
     font-size: 15px;
@@ -41,25 +40,16 @@ body {
         }
         li:last-child:hover,
         li:last-child:active {
-          color: #44d55c;
+          color: #00ff00;
         }
       }
     }
     .about {
       margin-bottom: 50px;
-      padding-right: 20px;
+      padding-right: 30px;
       .title {
         font-size: 35px;
       }
-    }
-    .projects {
-      background-color: $secondary-color;
-      margin-bottom: 30px;
-    }
-    .blog {
-    }
-    .contact {
-      background-color: $secondary-color;
     }
   }
 }

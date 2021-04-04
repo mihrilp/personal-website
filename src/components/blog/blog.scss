@@ -1,0 +1,12 @@
+.blog {
+    border-bottom: 0.5px solid #27313f;
+    padding: 20px;
+    align-items: center;
+    .blogTitle {
+        font-size: 20px;
+        color: #45556e;
+    }
+    .icon {
+        cursor: pointer;
+    }
+}

@@ -1,5 +1,16 @@
 .box {
-    background-color: #29313d;
-    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #222a36;
     height: 300px;
+    align-items: center;
+    .projectName {
+        font-size: 18px;
+    }
+    .code {
+        a {
+            text-decoration: none;
+            color: #00ff00;
+        }
+    }
 }
