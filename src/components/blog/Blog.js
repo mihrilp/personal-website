@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./blog.scss";
-import Arrow from "../icons/arrow";
 
 const Blog = () => {
   return (
@@ -13,9 +12,7 @@ const Blog = () => {
           consequatur error. Quo explicabo expedita minima quasi nisi, dolorum
           nemo repellendus!
         </Col>
-        <Col className="icon">
-          <Arrow />
-        </Col>
+        <Col className="icon"></Col>
       </Row>
     </Container>
   );

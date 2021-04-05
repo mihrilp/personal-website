@@ -2,7 +2,6 @@ import "./mysass.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import Projects from "./contents/projects/Projects";
 import Blogs from "./contents/blogs/Blogs";
-import Image from "./components/icons/image";
 import Contact from "./contents/contact/Contact";
 
 function App() {
@@ -18,19 +17,22 @@ function App() {
         </Col>
       </Row>
       <Row className="about">
-        <Col md={4}>
-          <Image />
-        </Col>
+        <Col md={4}></Col>
         <Col md={8}>
-          <p className="title">I'm Mihriban Alp</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-            maxime quo? Odio vero dolor eaque quos beatae sunt quidem,
-            reprehenderit, id nobis explicabo veritatis suscipit quaerat cum
-            maiores eum blanditiis, hic deserunt repudiandae quae! Ipsa ab id et
-            modi hic velit quo! Iusto quisquam numquam porro temporibus,
-            delectus illo quod.
-          </p>
+          <Row>
+            <p className="title">I'm Mihriban Alp</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+              maxime quo? Odio vero dolor eaque quos beatae sunt quidem,
+              reprehenderit, id nobis explicabo veritatis suscipit quaerat cum
+              maiores eum blanditiis, hic deserunt repudiandae quae! Ipsa ab id
+              et modi hic velit quo! Iusto quisquam numquam porro temporibus,
+              delectus illo quod.
+            </p>
+          </Row>
+          <Row>
+            <Col></Col>
+          </Row>
         </Col>
       </Row>
       <Row className="projects">

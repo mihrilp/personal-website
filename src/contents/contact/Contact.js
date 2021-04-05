@@ -1,43 +1,72 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 import { Container, Row, Col } from "react-bootstrap";
-import Facebook from "../../components/icons/facebook";
-import Instagram from "../../components/icons/instagram";
-import Twitter from "../../components/icons/twitter";
-import Linkedin from "../../components/icons/linkedin";
-import Spotify from "../../components/icons/spotify";
-import Telegram from "../../components/icons/telegram";
-import Github from "../../components/icons/github";
-import Discord from "../../components/icons/discord";
+import * as Icons from "../../components/icons";
 
 const Contact = () => {
   return (
     <Container className="contact">
-      <Col className="title">Contact</Col>
       <Row>
-        <Col>
-          <Facebook />
+        <Col className="title">Contact</Col>
+      </Row>
+      <Row>
+        <Col md={4}>
+          <Row className="socialIcons mb-5">
+            <Col>
+              <Icons.Instagram />
+            </Col>
+            <Col>
+              <Icons.Linkedin />
+            </Col>
+            <Col>
+              <Icons.Twitter />
+            </Col>
+            <Col>
+              <Icons.Telegram />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Icons.Github />
+            </Col>
+            <Col>
+              <Icons.Discord />
+            </Col>
+            <Col>
+              <Icons.Spotify />
+            </Col>
+          </Row>
         </Col>
-        <Col>
-          <Instagram />
-        </Col>
-        <Col>
-          <Twitter />
-        </Col>
-        <Col>
-          <Linkedin />
-        </Col>
-        <Col>
-          <Spotify />
-        </Col>
-        <Col>
-          <Telegram />
-        </Col>
-        <Col>
-          <Github />
-        </Col>
-        <Col>
-          <Discord />
+        <Col className="form" md={8}>
+          <Row className="justify-content-md-center">
+            <Col>
+              <p>Email: </p>
+            </Col>
+            <Col className="email">
+              <input type="text" style={{ height: 40 }} />
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center mb-10">
+            <Col>
+              <p>Subject: </p>
+            </Col>
+            <Col classname="subject">
+              <input type="text" style={{ height: 40 }} />
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center">
+            <Col>
+              <p>Message: </p>
+            </Col>
+            <Col>
+              <input type="text" style={{ height: 150 }} />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className="button">SEND</div>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Container>

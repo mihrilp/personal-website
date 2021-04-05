@@ -1,0 +1,27 @@
+.contact {
+    margin: 20px;
+    .title {
+        font-size: 35px;
+        margin-bottom: 70px;
+    }
+    .socialIcons {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .form {
+        input {
+            background-color: #2b343b;
+            border: none;
+            width: 350px;
+            margin-bottom: 20px;
+        }
+        .message {
+            height: 50px;
+        }
+        .button {
+            border: 1px solid #26c6da;
+            text-align: center;
+            padding: 5px;
+        }
+    }
+}

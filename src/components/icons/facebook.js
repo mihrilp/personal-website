@@ -1,24 +1,21 @@
 import * as React from "react";
 
-function SvgComponent(props) {
+function SvgFacebook(props) {
   return (
     <svg
-      height={40}
-      viewBox="0 0 32 32"
-      width={40}
+      width="2em"
+      height="2em"
+      viewBox="0 0 128 257"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <path
-        d="M26 32H6a6 6 0 01-6-6V6a6 6 0 016-6h20a6 6 0 016 6v20a6 6 0 01-6 6z"
-        fill="#ffe6e2"
-      />
-      <path
-        d="M18.727 10.657h1.46V8.113A18.714 18.714 0 0018.06 8c-2.106 0-3.548 1.325-3.548 3.759V14h-2.324v2.844h2.324V24l2.849.001v-7.156h2.23l.354-2.844H17.36v-1.959c.001-.822.222-1.385 1.367-1.385z"
-        fill="#fc573b"
+        d="M104.624 42.512h23.36V1.808C123.968 1.248 110.096 0 93.952 0 60.256 0 37.184 21.2 37.184 60.144V96H0v45.504h37.184V256l45.584.016V141.52h35.68l5.664-45.504h-41.36V64.672c.016-13.152 3.552-22.16 21.872-22.16z"
+        fill="#FC573B"
       />
     </svg>
   );
 }
 
-export default SvgComponent;
+export default SvgFacebook;
