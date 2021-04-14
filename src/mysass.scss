@@ -1,5 +1,5 @@
-$primary-color: #222a36;
-$secondary-color: #191e22;
+$primary-color: #000000;
+$secondary-color: #1c232e;
 $text-color: #ebebec;
 $font-family: "Palanquin", sans-serif;
 
@@ -10,14 +10,14 @@ $font-family: "Palanquin", sans-serif;
 }
 
 body {
-  background-color: $secondary-color;
+  background-color: $primary-color;
   color: $text-color;
   .container {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-family: $font-family;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 200;
     .header {
       margin-bottom: 50px;
@@ -31,16 +31,9 @@ body {
         li {
           cursor: pointer;
         }
-        li:first-child:hover,
-        li:first-child:active {
-          color: #a259ff;
-        }
-        li:not(:first-child):not(:last-child):hover {
-          color: #f24d1d;
-        }
-        li:last-child:hover,
-        li:last-child:active {
-          color: #00ff00;
+        li:hover,
+        li:active {
+          color: "#26c6da";
         }
       }
     }
@@ -48,7 +41,17 @@ body {
       margin-bottom: 50px;
       padding-right: 30px;
       .title {
-        font-size: 35px;
+        font-size: 40px;
+      }
+      .buttonContainer {
+        align-items: center;
+        justify-content: center;
+      }
+      .contactButton {
+        border: 1px solid #26c6da;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
       }
     }
   }

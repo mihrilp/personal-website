@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "icon": "svgr icons -d components/icons --icon"
+    "svgr": "svgr icons -d components/icons --icon"
   },
   "eslintConfig": {
     "extends": [

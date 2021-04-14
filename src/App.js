@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Projects from "./contents/projects/Projects";
 import Blogs from "./contents/blogs/Blogs";
 import Contact from "./contents/contact/Contact";
+import Alien from "./components/icons/Alien";
 
 function App() {
   return (
@@ -12,26 +13,16 @@ function App() {
           <ul className="navbar">
             <li>Projects</li>
             <li>Blog</li>
-            <li>Contact</li>
+            <li>About</li>
           </ul>
         </Col>
       </Row>
       <Row className="about">
-        <Col md={4}></Col>
-        <Col md={8}>
-          <Row>
-            <p className="title">I'm Mihriban Alp</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-              maxime quo? Odio vero dolor eaque quos beatae sunt quidem,
-              reprehenderit, id nobis explicabo veritatis suscipit quaerat cum
-              maiores eum blanditiis, hic deserunt repudiandae quae! Ipsa ab id
-              et modi hic velit quo! Iusto quisquam numquam porro temporibus,
-              delectus illo quod.
-            </p>
-          </Row>
-          <Row>
-            <Col></Col>
+        <Col>
+          <p className="title">Hey there, I'm Mihriban {<Alien />}</p>
+          <p>I'm a student of Computer Engineering.</p>
+          <Row className="buttonContainer">
+            <p className="contactButton">Let's Connect</p>
           </Row>
         </Col>
       </Row>
