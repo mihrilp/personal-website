@@ -7,7 +7,7 @@ const Blogs = () => {
   return (
     <Container className="blogs">
       <Col className="title">
-        <p>Blogs</p>
+        <p>Latest Posts</p>
       </Col>
       <Row>
         <ul>

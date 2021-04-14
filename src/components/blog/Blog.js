@@ -1,18 +1,31 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./blog.scss";
+import { Arrow, Date } from "../icons";
 
 const Blog = () => {
   return (
     <Container className="blog">
       <Row>
-        <Col className="blogTitle">Blog #1</Col>
-        <Col className="summary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-          consequatur error. Quo explicabo expedita minima quasi nisi, dolorum
-          nemo repellendus!
+        <Col md={9}>
+          <Row className="blogTitle">
+            <p>Blog #1</p>
+          </Row>
+          <Row className="date">
+            <Date />
+            <p>14.04.21</p>
+          </Row>
+          <Row className="summary">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+              consequatur error. Quo explicabo expedita minima quasi nisi,
+              dolorum nemo repellendus!
+            </p>
+          </Row>
         </Col>
-        <Col className="icon"></Col>
+        <Col md={3}>
+          <Arrow className="arrow" />
+        </Col>
       </Row>
     </Container>
   );

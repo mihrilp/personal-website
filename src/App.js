@@ -26,11 +26,11 @@ function App() {
           </Row>
         </Col>
       </Row>
-      <Row className="projects">
-        <Projects />
-      </Row>
       <Row className="blogs">
         <Blogs />
+      </Row>
+      <Row className="projects">
+        <Projects />
       </Row>
       <Row className="contact">
         <Contact />

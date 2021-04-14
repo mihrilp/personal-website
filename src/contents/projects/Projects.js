@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <Container className="projects">
       <Col className="title">
-        <p>Projects</p>
+        <p>Best Projects</p>
       </Col>
       <Row className="projectList">
         <Col>
