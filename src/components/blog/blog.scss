@@ -1,21 +1,24 @@
 .blog {
-    padding: 20px;
+    padding: 25px;
     margin: 20px;
     border: 0.5px solid #5b5c63;
     cursor: pointer;
-    align-items: center;
+    border-radius: 15px;
     .blogTitle {
         font-size: 20px;
         font-weight: bold;
+        align-items: center;
+        justify-content: center;
     }
     .date {
         color: #5b5c63;
+        margin-left: 30px;
     }
-    .arrow {
+    .arrowIcon {
         width: max-content;
         height: max-content;
         border-radius: 50%;
-        background-color: #5b5c63;
+
         padding: 12px;
     }
 }

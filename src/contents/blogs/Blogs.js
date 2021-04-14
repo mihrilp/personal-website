@@ -6,21 +6,16 @@ import { Container, Row, Col } from "react-bootstrap";
 const Blogs = () => {
   return (
     <Container className="blogs">
-      <Col className="title">
-        <p>Latest Posts</p>
-      </Col>
       <Row>
-        <ul>
-          <li>
-            <Blog />
-          </li>
-          <li>
-            <Blog />
-          </li>
-          <li>
-            <Blog />
-          </li>
-        </ul>
+        <Col className="title">
+          <p>Latest Posts</p>
+        </Col>
+      </Row>
+      <Row>
+        <Blog />
+      </Row>
+      <Row>
+        <Blog />
       </Row>
     </Container>
   );

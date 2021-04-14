@@ -6,28 +6,22 @@ import Project from "../../components/project/Project";
 const Projects = () => {
   return (
     <Container className="projects">
-      <Col className="title">
-        <p>Best Projects</p>
-      </Col>
-      <Row className="projectList">
+      <Row className="title">
         <Col>
-          <Project
-            projectName="Scientific Calculator"
-            linkUrl="https://github.com/mihrilp/scientific-calculator"
-          />
+          <p>Best Projects</p>
         </Col>
-        <Col>
-          <Project
-            projectName="To-do App"
-            linkUrl="https://github.com/mihrilp/react-todoapp"
-          />
-        </Col>
-        <Col>
-          <Project projectName="Cryptocurrency Price Notifications" />
-        </Col>
-        <Col>
-          <Project projectName="To-do App" />
-        </Col>
+      </Row>
+      <Row>
+        <Project
+          projectName="Scientific Calculator"
+          linkUrl="https://github.com/mihrilp/scientific-calculator"
+        />
+      </Row>
+      <Row>
+        <Project
+          projectName="To-do App"
+          linkUrl="https://github.com/mihrilp/react-todoapp"
+        />
       </Row>
     </Container>
   );

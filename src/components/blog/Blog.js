@@ -7,24 +7,18 @@ const Blog = () => {
   return (
     <Container className="blog">
       <Row>
-        <Col md={9}>
-          <Row className="blogTitle">
-            <p>Blog #1</p>
-          </Row>
+        <Col md={2}>
           <Row className="date">
-            <Date />
             <p>14.04.21</p>
           </Row>
-          <Row className="summary">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-              consequatur error. Quo explicabo expedita minima quasi nisi,
-              dolorum nemo repellendus!
-            </p>
+        </Col>
+        <Col md={8}>
+          <Row className="blogTitle">
+            <p>Javascript and React</p>
           </Row>
         </Col>
-        <Col md={3}>
-          <Arrow className="arrow" />
+        <Col md={2}>
+          <Arrow className="arrowIcon" />
         </Col>
       </Row>
     </Container>

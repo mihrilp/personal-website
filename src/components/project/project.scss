@@ -1,16 +1,17 @@
-.box {
-    display: flex;
-    justify-content: space-around;
-    background-color: #1c232e;
-    height: 300px;
+.project {
+    border: 0.5px solid #5b5c63;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px;
     align-items: center;
     .projectName {
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: bold;
     }
     .code {
         a {
             text-decoration: none;
-            color: #00ff00;
         }
     }
 }

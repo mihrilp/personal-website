@@ -3,9 +3,9 @@ import * as React from "react";
 function SvgDate(props) {
   return (
     <svg
-      height={20}
+      height={23}
       viewBox="0 0 512 512"
-      width={20}
+      width={23}
       fill="#5b5c63"
       xmlns="http://www.w3.org/2000/svg"
       {...props}

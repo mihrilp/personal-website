@@ -2,7 +2,6 @@ import "./mysass.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import Projects from "./contents/projects/Projects";
 import Blogs from "./contents/blogs/Blogs";
-import Contact from "./contents/contact/Contact";
 import Alien from "./components/icons/Alien";
 
 function App() {
@@ -20,10 +19,12 @@ function App() {
       <Row className="about">
         <Col>
           <p className="title">Hey there, I'm Mihriban {<Alien />}</p>
-          <p>I'm a student of Computer Engineering.</p>
-          <Row className="buttonContainer">
-            <p className="contactButton">Let's Connect</p>
-          </Row>
+          <p>
+            I'm a student of Computer Engineering. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Amet cum temporibus fugiat culpa unde
+            vel corrupti, quasi tempora dignissimos ut?Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Quos, corrupti!
+          </p>
         </Col>
       </Row>
       <Row className="blogs">
@@ -33,7 +34,9 @@ function App() {
         <Projects />
       </Row>
       <Row className="contact">
-        <Contact />
+        <Row className="buttonContainer">
+          <p className="contactButton">Let's Connect</p>
+        </Row>
       </Row>
     </Container>
   );
