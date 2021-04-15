@@ -33,7 +33,7 @@ body {
       .navbar {
         width: 35%;
         list-style: none;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 400;
         color: #8b8d91;
         li {
@@ -46,7 +46,6 @@ body {
       }
     }
     .about {
-      margin-bottom: 50px;
       padding: 60px;
       text-align: center;
       .title {
@@ -56,9 +55,11 @@ body {
     }
     .blogs {
       padding: 20px;
+      margin: 20px;
     }
     .projects {
       padding: 20px;
+      margin: 20px;
     }
     .socialIcons {
       margin-top: 50px;
@@ -68,6 +69,7 @@ body {
       }
       .socialIcon {
         cursor: pointer;
+        margin-bottom: 30px;
       }
     }
   }

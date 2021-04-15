@@ -1,10 +1,40 @@
+import { useState, useEffect } from "react";
 import "./style.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import Blog from "./components/blog/Blog";
 import Project from "./components/project/Project";
 import * as Icons from "./components/icons";
 
+const dynamicSort = (property) => {
+  var sortOrder = 1;
+
+  if (property[0] === "-") {
+    sortOrder = -1;
+    property = property.substr(1);
+  }
+
+  return function (a, b) {
+    if (sortOrder === -1) {
+      return b[property] - a[property];
+    } else {
+      return a[property] - b[property];
+    }
+  };
+};
+
 function App() {
+  const [repos, setRepos] = useState([
+    { name: "", stargazers_count: 0, language: "" },
+  ]);
+
+  useEffect(() => {
+    fetch("https://api.github.com/users/mihrilp/repos")
+      .then((response) => response.json())
+      .then((data) =>
+        setRepos(data.sort(dynamicSort("-stargazers_count")).slice(0, 2))
+      );
+  }, []);
+
   return (
     <Container>
       <Row className="header">
@@ -50,16 +80,18 @@ function App() {
             </Col>
           </Row>
           <Row>
-            <Project
-              projectName="Scientific Calculator"
-              linkUrl="https://github.com/mihrilp/scientific-calculator"
-            />
-          </Row>
-          <Row>
-            <Project
-              projectName="To-do App"
-              linkUrl="https://github.com/mihrilp/react-todoapp"
-            />
+            {repos.map((repo) => {
+              return (
+                <Col>
+                  <Project
+                    projectName={repo.name.replace("-", " ")}
+                    linkUrl={repo.html_url}
+                    description={repo.description}
+                    language={repo.language}
+                  />
+                </Col>
+              );
+            })}
           </Row>
         </Col>
       </Row>

@@ -2,16 +2,24 @@
     border: 0.5px solid #5b5c63;
     cursor: pointer;
     border-radius: 15px;
-    padding: 25px;
+    padding: 30px;
     margin: 20px;
-    align-items: center;
     .projectName {
         font-size: 20px;
-        font-weight: normal;
+        font-weight: bold;
+        color: #ffd200;
+        margin-bottom: 15px;
+    }
+    .description {
+        margin-bottom: 50px;
+        font-weight: lighter;
     }
     .code {
         a {
             text-decoration: none;
         }
+    }
+    .language {
+        margin-right: 10px;
     }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./blog.scss";
-import { Arrow, Date } from "../icons";
+import Arrow from "../icons/Arrow";
 
 const Blog = () => {
   return (

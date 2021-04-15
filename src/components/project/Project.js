@@ -1,23 +1,27 @@
 import React from "react";
 import "./project.scss";
-import { Container, Row } from "react-bootstrap";
-import Code from "../icons/Code";
+import { Container, Row, Col } from "react-bootstrap";
+import { Code, Circle, Star } from "../icons/";
 
-const Project = ({ projectName, linkUrl }) => {
+const Project = ({ projectName, linkUrl, description, language }) => {
   return (
     <Container className="project">
-      <Row>
-        <p className="projectName">{projectName}</p>
-        <p className="explanation">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
-          obcaecati laboriosam porro dicta illo aperiam sunt placeat earum,
-          tenetur ipsam.
-        </p>
+      <Row className="projectName">
+        <Col>{projectName}</Col>
+      </Row>
+      <Row className="description">
+        <Col>{description}</Col>
       </Row>
       <Row>
-        <a className="code" href={linkUrl}>
-          <Code />
-        </a>
+        <Col>
+          <Circle className="language" />
+          {language}
+        </Col>
+        <Col>
+          <a className="code" href={linkUrl}>
+            <Code />
+          </a>
+        </Col>
       </Row>
     </Container>
   );

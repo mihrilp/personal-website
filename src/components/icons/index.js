@@ -7,3 +7,6 @@ export { default as Arrow } from "./Arrow";
 export { default as Date } from "./Date";
 export { default as Code } from "./Code";
 export { default as Link } from "./Link";
+export { default as Circle } from "./Circle";
+export { default as Star } from "./Star";
+export { default as React } from "./React";
