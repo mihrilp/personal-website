@@ -18,9 +18,15 @@ body {
     text-align: center;
     font-family: $font-family;
     font-size: 19px;
-    font-weight: 200;
+    font-weight: lighter;
     padding-left: 50px;
     padding-right: 50px;
+    .title {
+      font-size: 35px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #26c6da;
+    }
     .header {
       margin-bottom: 50px;
       margin-top: 50px;
@@ -41,16 +47,28 @@ body {
     }
     .about {
       margin-bottom: 50px;
-      padding: 30px;
+      padding: 60px;
       text-align: center;
       .title {
         font-size: 40px;
         font-weight: bold;
       }
     }
+    .blogs {
+      padding: 20px;
+    }
+    .projects {
+      padding: 20px;
+    }
     .socialIcons {
       margin-top: 50px;
       margin-bottom: 50px;
+      .connect {
+        font-size: 25px;
+      }
+      .socialIcon {
+        cursor: pointer;
+      }
     }
   }
 }
