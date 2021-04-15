@@ -10,3 +10,4 @@ export { default as Alien } from "./Alien";
 export { default as Arrow } from "./Arrow";
 export { default as Date } from "./Date";
 export { default as Code } from "./Code";
+export { default as Link } from "./Link";

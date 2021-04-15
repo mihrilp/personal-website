@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Projects from "./contents/projects/Projects";
 import Blogs from "./contents/blogs/Blogs";
 import Alien from "./components/icons/Alien";
+import * as Icons from "./components/icons";
 
 function App() {
   return (
@@ -33,10 +34,21 @@ function App() {
       <Row className="projects">
         <Projects />
       </Row>
-      <Row className="contact">
-        <Row className="buttonContainer">
-          <p className="contactButton">Let's Connect</p>
-        </Row>
+      <Row className="socialIcons">
+        <Col></Col>
+        <Col>
+          <Icons.Twitter />
+        </Col>
+        <Col>
+          <Icons.Github />
+        </Col>
+        <Col>
+          <Icons.Linkedin />
+        </Col>
+        <Col>
+          <Icons.Spotify />
+        </Col>
+        <Col></Col>
       </Row>
     </Container>
   );

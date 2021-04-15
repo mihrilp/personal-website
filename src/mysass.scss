@@ -27,7 +27,7 @@ body {
       .navbar {
         width: 35%;
         list-style: none;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 400;
         color: #8b8d91;
         li {
@@ -47,16 +47,10 @@ body {
         font-size: 40px;
         font-weight: bold;
       }
-      .buttonContainer {
-        align-items: center;
-        justify-content: center;
-      }
-      .contactButton {
-        border: 1px solid #26c6da;
-        padding: 15px;
-        border-radius: 10px;
-        cursor: pointer;
-      }
+    }
+    .socialIcons {
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
   }
 }
