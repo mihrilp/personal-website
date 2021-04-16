@@ -6,12 +6,17 @@
     border-radius: 15px;
     .blogTitle {
         font-size: 20px;
-        align-items: center;
-        justify-content: center;
+        color: #ffd200;
+        margin-bottom: 20px;
+    }
+    .summary {
+        margin-bottom: 30px;
     }
     .date {
-        color: #5b5c63;
-        margin-left: 30px;
+        margin-bottom: 20px;
+        .dateIcon {
+            margin-right: 8px;
+        }
     }
     .arrowIcon {
         width: max-content;

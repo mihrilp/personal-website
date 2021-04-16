@@ -65,10 +65,10 @@ function App() {
             </Col>
           </Row>
           <Row>
-            <Blog />
+            <Blog date="15.04.21" />
           </Row>
           <Row>
-            <Blog />
+            <Blog date="16.04.21" />
           </Row>
         </Col>
       </Row>

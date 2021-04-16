@@ -1,7 +1,7 @@
 import React from "react";
 import "./project.scss";
 import { Container, Row, Col } from "react-bootstrap";
-import { Code, Circle, Star } from "../icons/";
+import { Code, Circle } from "../icons/";
 
 const Project = ({ projectName, linkUrl, description, language }) => {
   return (
