@@ -11,3 +11,4 @@ export { default as Circle } from "./Circle";
 export { default as Star } from "./Star";
 export { default as React } from "./React";
 export { default as Image } from "./Image";
+export { default as Hello } from "./Hello";

@@ -13,8 +13,8 @@ const Project = ({ projectName, linkUrl, description, language }) => {
         <Col>{description}</Col>
       </Row>
       <Row>
-        <Col>
-          <Circle className="language" />
+        <Col className="language">
+          <Circle className="circle" />
           {language}
         </Col>
         <Col>

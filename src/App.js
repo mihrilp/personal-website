@@ -45,6 +45,11 @@ function App() {
             <li>About</li>
           </ul>
         </Col>
+        <Col>
+          <a className="meetButton" href="mailto: mihrilp@gmail.com">
+            Let's Meet <Icons.Hello />
+          </a>
+        </Col>
       </Row>
       <Row className="about">
         <Col>

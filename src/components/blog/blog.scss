@@ -1,16 +1,19 @@
+$yellow: #ffd200;
+$gray: #5b5c63;
+
 .blog {
     padding: 25px;
     margin: 20px;
-    border: 0.5px solid #5b5c63;
+    border: 0.5px solid $gray;
     cursor: pointer;
     border-radius: 15px;
     .blogTitle {
         font-size: 20px;
-        color: #ffd200;
+        color: $yellow;
         margin-bottom: 20px;
     }
     .summary {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     .date {
         margin-bottom: 20px;

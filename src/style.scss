@@ -1,7 +1,9 @@
-$primary-color: #000000;
-$secondary-color: #1c232e;
+$background-color: #000000;
 $text-color: #ebebec;
 $font-family: "Palanquin", sans-serif;
+$yellow: #ffd200;
+$turquoise: #26c6da;
+$gray: #5b5c63;
 
 * {
   margin: 0;
@@ -10,7 +12,7 @@ $font-family: "Palanquin", sans-serif;
 }
 
 body {
-  background-color: $primary-color;
+  background-color: $background-color;
   color: $text-color;
   .container {
     display: flex;
@@ -25,7 +27,7 @@ body {
       font-size: 35px;
       margin-bottom: 10px;
       font-weight: bold;
-      color: #26c6da;
+      color: $turquoise;
     }
     .header {
       margin-bottom: 50px;
@@ -35,13 +37,21 @@ body {
         list-style: none;
         font-size: 20px;
         font-weight: 400;
-        color: #8b8d91;
+        color: $gray;
         li {
           cursor: pointer;
         }
         li:hover,
         li:active {
           color: "#26c6da";
+        }
+      }
+      .meetButton {
+        text-decoration: none;
+        font-size: 20px;
+        color: $yellow;
+        :hover {
+          font-size: 25px;
         }
       }
     }
