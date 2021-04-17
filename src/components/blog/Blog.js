@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./blog.scss";
-import { Arrow, Date } from "../icons";
+import { Date, Heart, Comment } from "../icons";
 
-const Blog = ({ date }) => {
+const Blog = ({ date, likes, comments }) => {
   return (
     <Container className="blog">
       <Row className="blogTitle">
@@ -19,13 +19,18 @@ const Blog = ({ date }) => {
           Voluptatum adipisci a laudantium maiores.
         </Col>
       </Row>
-      <Row className="date">
+      <Row className="bottomLine">
         <Col>
-          <Date className="dateIcon" />
+          <Date className="icon" />
           {date}
         </Col>
         <Col>
-          <Arrow />
+          <Heart className="icon" />
+          {likes}
+        </Col>
+        <Col>
+          <Comment className="icon" />
+          {comments}
         </Col>
       </Row>
     </Container>

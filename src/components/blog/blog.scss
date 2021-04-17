@@ -12,19 +12,14 @@ $gray: #5b5c63;
         color: $yellow;
         margin-bottom: 20px;
     }
+    .bottomLine {
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .icon {
+        margin-right: 8px;
+    }
     .summary {
         margin-bottom: 50px;
-    }
-    .date {
-        margin-bottom: 20px;
-        .dateIcon {
-            margin-right: 8px;
-        }
-    }
-    .arrowIcon {
-        width: max-content;
-        height: max-content;
-        border-radius: 50%;
-        padding: 12px;
     }
 }

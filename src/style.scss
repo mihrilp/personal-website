@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     text-align: center;
     font-family: $font-family;
-    font-size: 19px;
+    font-size: 20px;
     font-weight: lighter;
     padding-left: 50px;
     padding-right: 50px;
@@ -32,11 +32,11 @@ body {
     .header {
       margin-bottom: 50px;
       margin-top: 50px;
+      font-size: 20px;
+      font-weight: 400;
       .navbar {
         width: 35%;
         list-style: none;
-        font-size: 20px;
-        font-weight: 400;
         color: $gray;
         li {
           cursor: pointer;
@@ -48,11 +48,7 @@ body {
       }
       .meetButton {
         text-decoration: none;
-        font-size: 20px;
         color: $yellow;
-        :hover {
-          font-size: 25px;
-        }
       }
     }
     .about {
@@ -70,6 +66,16 @@ body {
     .projects {
       padding: 20px;
       margin: 20px;
+    }
+    .seeMore {
+      font-size: 18px;
+      color: $gray;
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 40px;
+      .clickIcon {
+        margin-left: 8px;
+      }
     }
     .socialIcons {
       margin-top: 50px;

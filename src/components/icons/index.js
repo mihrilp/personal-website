@@ -12,3 +12,7 @@ export { default as Star } from "./Star";
 export { default as React } from "./React";
 export { default as Image } from "./Image";
 export { default as Hello } from "./Hello";
+export { default as Heart } from "./Heart";
+export { default as Comment } from "./Comment";
+export { default as Fork } from "./Fork";
+export { default as Click } from "./Click";

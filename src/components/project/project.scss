@@ -1,5 +1,6 @@
 $yellow: #ffd200;
 $gray: #5b5c63;
+$text-color: #ebebec;
 
 .project {
     border: 0.5px solid $gray;
@@ -7,6 +8,10 @@ $gray: #5b5c63;
     border-radius: 15px;
     padding: 30px;
     margin: 20px;
+    a {
+        text-decoration: none;
+        color: $text-color;
+    }
     .projectName {
         font-size: 20px;
         color: $yellow;
@@ -16,14 +21,14 @@ $gray: #5b5c63;
         margin-bottom: 50px;
         font-weight: lighter;
     }
-    .code {
-        a {
-            text-decoration: none;
-        }
+    .bottomLine {
+        font-size: 17px;
+    }
+    .icon {
+        margin-right: 8px;
     }
     .language {
-        .circle {
-            margin-right: 8px;
-        }
+        font-size: 16px;
+        color: $text-color;
     }
 }

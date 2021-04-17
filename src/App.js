@@ -45,7 +45,7 @@ function App() {
             <li>About</li>
           </ul>
         </Col>
-        <Col>
+        <Col md={4}>
           <a className="meetButton" href="mailto: mihrilp@gmail.com">
             Let's Meet <Icons.Hello />
           </a>
@@ -70,11 +70,19 @@ function App() {
             </Col>
           </Row>
           <Row>
-            <Blog date="15.04.21" />
+            <Blog date="15.04.21" likes="25" comments="15" />
           </Row>
           <Row>
-            <Blog date="16.04.21" />
+            <Blog date="16.04.21" likes="27" comments="13" />
           </Row>
+        </Col>
+      </Row>
+      <Row className="seeMore">
+        <Col>
+          <p>
+            See All Posts
+            <Icons.Click className="clickIcon" />
+          </p>
         </Col>
       </Row>
       <Row className="projects">
@@ -93,11 +101,21 @@ function App() {
                     linkUrl={repo.html_url}
                     description={repo.description}
                     language={repo.language}
+                    stars={repo.stargazers_count}
+                    forks={repo.forks}
                   />
                 </Col>
               );
             })}
           </Row>
+        </Col>
+      </Row>
+      <Row className="seeMore">
+        <Col>
+          <p>
+            See All Projects
+            <Icons.Click className="clickIcon" />
+          </p>
         </Col>
       </Row>
       <Row className="socialIcons">

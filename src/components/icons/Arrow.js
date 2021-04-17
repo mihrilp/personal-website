@@ -6,7 +6,7 @@ function SvgArrow(props) {
       xmlns="http://www.w3.org/2000/svg"
       width={25}
       height={25}
-      fill="#26c6da"
+      fill="#ffd200"
       viewBox="0 0 268.832 268.832"
       {...props}
     >
