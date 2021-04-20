@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./blog.scss";
+import "./blogPost.scss";
 import { Date, Heart, Comment } from "../icons";
 
-const Blog = ({ date, likes, comments }) => {
+const BlogPost = ({ date, likes, comments }) => {
   return (
     <Container className="blog">
       <Row className="blogTitle">
@@ -37,4 +37,4 @@ const Blog = ({ date, likes, comments }) => {
   );
 };
 
-export default Blog;
+export default BlogPost;
