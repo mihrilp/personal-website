@@ -18,11 +18,13 @@ $gray: #5b5c63;
         margin: 20px;
     }
     .seeMore {
-        font-size: 18px;
-        color: $gray;
-        cursor: pointer;
-        font-weight: bold;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
+        .link {
+            font-size: 18px;
+            font-weight: bold;
+            color: $gray;
+            text-decoration: none;
+        }
         .clickIcon {
             margin-left: 8px;
         }
@@ -30,9 +32,6 @@ $gray: #5b5c63;
     .socialIcons {
         margin-top: 50px;
         margin-bottom: 50px;
-        .connect {
-            font-size: 25px;
-        }
         .socialIcon {
             cursor: pointer;
             margin-bottom: 30px;

@@ -8,18 +8,25 @@ $gray: #5b5c63;
     cursor: pointer;
     border-radius: 15px;
     .blogTitle {
-        font-size: 20px;
+        font-size: 24px;
+        font-weight: bold;
         color: $yellow;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
-    .bottomLine {
-        font-size: 17px;
-        font-weight: 400;
-    }
-    .icon {
-        margin-right: 8px;
+    .date {
+        color: $gray;
+        margin-bottom: 15px;
+        font-weight: lighter;
     }
     .summary {
-        margin-bottom: 50px;
+        margin-bottom: 45px;
+    }
+    .reactions {
+        margin-bottom: 15px;
+        font-weight: lighter;
+        font-size: 17px;
+        .icon {
+            margin-right: 8px;
+        }
     }
 }

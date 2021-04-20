@@ -7,7 +7,8 @@ $text-color: #ebebec;
     cursor: pointer;
     border-radius: 15px;
     padding: 30px;
-    margin: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     a {
         text-decoration: none;
         color: $text-color;
@@ -16,6 +17,12 @@ $text-color: #ebebec;
         font-size: 20px;
         color: $yellow;
         margin-bottom: 15px;
+    }
+    .language {
+        font-size: 16px;
+        margin-bottom: 15px;
+        font-weight: lighter;
+        color: $gray;
     }
     .description {
         margin-bottom: 50px;
@@ -26,9 +33,5 @@ $text-color: #ebebec;
     }
     .icon {
         margin-right: 8px;
-    }
-    .language {
-        font-size: 16px;
-        color: $text-color;
     }
 }

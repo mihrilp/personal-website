@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./home.scss";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import BlogPost from "../../components/blog_post/BlogPost";
 import Project from "../../components/project/Project";
 import * as Icons from "../../components/icons";
@@ -39,7 +40,7 @@ function Home() {
     <Container className="container">
       <Row className="about">
         <Col>
-          <p className="title">Hey there, I'm Mihriban </p>
+          <p className="title">Hey there, I'm Mihriban {<Icons.Alien />} </p>
           <p>
             I'm a student of Computer Engineering. Lorem ipsum dolor sit amet,
             consectetur adipisicing elit. Amet cum temporibus fugiat culpa unde
@@ -63,12 +64,14 @@ function Home() {
           </Row>
         </Col>
       </Row>
-      <Row className="seeMore">
-        <Col>
-          <p>
-            See All Posts
-            <Icons.Click className="clickIcon" />
-          </p>
+      <Row>
+        <Col className="seeMore">
+          <Link className="link" to="/Blog">
+            <p>
+              See All Posts
+              <Icons.Click className="clickIcon" />
+            </p>
+          </Link>
         </Col>
       </Row>
       <Row className="projects">
@@ -96,12 +99,14 @@ function Home() {
           </Row>
         </Col>
       </Row>
-      <Row className="seeMore">
-        <Col>
-          <p>
-            See All Projects
-            <Icons.Click className="clickIcon" />
-          </p>
+      <Row>
+        <Col className="seeMore">
+          <Link className="link" to="/Projects">
+            <p>
+              See All Projects
+              <Icons.Click className="clickIcon" />
+            </p>
+          </Link>
         </Col>
       </Row>
       <Row className="socialIcons">

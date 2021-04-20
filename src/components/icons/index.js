@@ -16,3 +16,4 @@ export { default as Heart } from "./Heart";
 export { default as Comment } from "./Comment";
 export { default as Fork } from "./Fork";
 export { default as Click } from "./Click";
+export { default as Ufo } from "./Ufo";

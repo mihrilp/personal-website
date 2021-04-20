@@ -5,7 +5,7 @@ import Home from "./pages/home/Home";
 import Projects from "./pages/projejcts/Projects";
 import Blog from "./pages/blog/Blog";
 import About from "./pages/about/About";
-import { Hello, Alien } from "./components/icons/";
+import { Hello, Ufo } from "./components/icons/";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
             <ul className="navbar">
               <li>
                 <Link className="link" to="/">
-                  <Alien />
+                  <Ufo />
                 </Link>
               </li>
               <li>

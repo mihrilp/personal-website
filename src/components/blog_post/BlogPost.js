@@ -11,27 +11,29 @@ const BlogPost = ({ date, likes, comments }) => {
           <p>Javascript and React</p>
         </Col>
       </Row>
+      <Row className="date">
+        <Col>{date}</Col>
+      </Row>
       <Row className="summary">
         <Col>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit id
-          ex, perspiciatis blanditiis possimus facere aspernatur quas odio
-          tenetur voluptatibus cum adipisci pariatur, velit recusandae.
-          Voluptatum adipisci a laudantium maiores.
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit id
+            ex, perspiciatis blanditiis possimus facere aspernatur quas odio
+            tenetur voluptatibus cum adipisci pariatur, velit recusandae.
+          </p>
         </Col>
       </Row>
-      <Row className="bottomLine">
-        <Col>
-          <Date className="icon" />
-          {date}
-        </Col>
-        <Col>
+      <Row className="reactions">
+        <Col></Col>
+        <Col className="likes">
           <Heart className="icon" />
-          {likes}
+          {likes} reactions
         </Col>
         <Col>
           <Comment className="icon" />
-          {comments}
+          {comments} comments
         </Col>
+        <Col></Col>
       </Row>
     </Container>
   );

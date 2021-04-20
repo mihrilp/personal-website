@@ -1,7 +1,7 @@
 import React from "react";
 import "./project.scss";
 import { Container, Row, Col } from "react-bootstrap";
-import { Circle, Star, Fork } from "../icons/";
+import { Star, Fork, Circle } from "../icons/";
 
 const Project = ({
   projectName,
@@ -17,21 +17,24 @@ const Project = ({
         <Row className="projectName">
           <Col>{projectName}</Col>
         </Row>
-        <Row className="description">
-          <Col>{description}</Col>
-        </Row>
-        <Row className="bottomLine">
+        <Row>
           <Col className="language">
             <Circle className="icon" />
             {language}
           </Col>
+        </Row>
+        <Row className="description">
+          <Col>{description}</Col>
+        </Row>
+        <Row className="bottomLine">
+          <Col></Col>
           <Col>
             <Star className="icon" />
-            {stars}
+            {stars} Star
           </Col>
           <Col>
             <Fork className="icon" />
-            {forks}
+            {forks} Fork
           </Col>
         </Row>
       </a>
