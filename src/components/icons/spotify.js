@@ -4,8 +4,8 @@ function SvgSpotify(props) {
   return (
     <a href="https://open.spotify.com/user/cl13omk222r2v8e3l70oxn6q8?si=a8f437ea3df74700">
       <svg
-        width={95}
-        height={95}
+        width={90}
+        height={90}
         viewBox="0 0 924 277"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

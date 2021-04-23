@@ -1,0 +1,21 @@
+$gray: #5b5c63;
+
+.aboutContainer {
+    .about {
+        .image {
+            height: 250px;
+            width: 250px;
+        }
+        .text {
+            font-size: 17px;
+        }
+    }
+    .skills {
+        padding: 30px;
+        color: $gray;
+        font-weight: bold;
+        .icon {
+            margin-right: 5px;
+        }
+    }
+}

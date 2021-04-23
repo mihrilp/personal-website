@@ -2,7 +2,6 @@ $background-color: #000000;
 $text-color: #ebebec;
 $font-family: "Palanquin", sans-serif;
 $yellow: #ffd200;
-$turquoise: #26c6da;
 $gray: #5b5c63;
 
 * {
@@ -23,34 +22,9 @@ body {
     font-weight: lighter;
     padding-left: 50px;
     padding-right: 50px;
-    .title {
-      font-size: 35px;
-      margin-bottom: 10px;
-      font-weight: bold;
-      color: $turquoise;
-    }
-    .header {
-      margin-bottom: 50px;
-      margin-top: 50px;
-      font-size: 20px;
-      font-weight: 400;
-      align-items: center;
-      .navbar {
-        width: 43%;
-        list-style: none;
-        color: $gray;
-        text-decoration: none;
-        li {
-          .link {
-            text-decoration: none;
-            color: $gray;
-          }
-        }
-      }
-      .meetButton {
-        text-decoration: none;
-        color: $yellow;
-      }
+    .footer {
+      position: absolute;
+      bottom: 0;
     }
   }
 }

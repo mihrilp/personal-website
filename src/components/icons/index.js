@@ -17,3 +17,7 @@ export { default as Comment } from "./Comment";
 export { default as Fork } from "./Fork";
 export { default as Click } from "./Click";
 export { default as Ufo } from "./Ufo";
+export { default as Html } from "./Html";
+export { default as Css } from "./Css";
+export { default as Python } from "./Python";
+export { default as Javascript } from "./Javascript";

@@ -4,8 +4,8 @@ function SvgLinkedin(props) {
   return (
     <a href="https://www.linkedin.com/in/mihrilp/">
       <svg
-        width={100}
-        height={100}
+        width={90}
+        height={90}
         viewBox="0 0 1192 300"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

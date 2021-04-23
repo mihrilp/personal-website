@@ -17,17 +17,15 @@ const Project = ({
         <Row className="projectName">
           <Col>{projectName}</Col>
         </Row>
-        <Row>
-          <Col className="language">
-            <Circle className="icon" />
-            {language}
-          </Col>
-        </Row>
+        <Row></Row>
         <Row className="description">
           <Col>{description}</Col>
         </Row>
         <Row className="bottomLine">
-          <Col></Col>
+          <Col>
+            <Circle className="icon" />
+            {language}
+          </Col>
           <Col>
             <Star className="icon" />
             {stars} Star

@@ -3,15 +3,14 @@ $gray: #5b5c63;
 
 .blog {
     padding: 25px;
-    margin: 20px;
     border: 0.5px solid $gray;
     cursor: pointer;
     border-radius: 15px;
+    margin-bottom: 40px;
     .blogTitle {
         font-size: 24px;
         font-weight: bold;
         color: $yellow;
-        margin-bottom: 5px;
     }
     .date {
         color: $gray;

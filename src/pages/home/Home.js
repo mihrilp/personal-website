@@ -38,9 +38,13 @@ function Home() {
 
   return (
     <Container className="container">
+      <Row className="title">
+        <Col>
+          <p>Hey there, I'm Mihriban {<Icons.Alien />} </p>
+        </Col>
+      </Row>
       <Row className="about">
         <Col>
-          <p className="title">Hey there, I'm Mihriban {<Icons.Alien />} </p>
           <p>
             I'm a student of Computer Engineering. Lorem ipsum dolor sit amet,
             consectetur adipisicing elit. Amet cum temporibus fugiat culpa unde
@@ -49,13 +53,13 @@ function Home() {
           </p>
         </Col>
       </Row>
+      <Row className="title">
+        <Col>
+          <p>Latest Posts</p>
+        </Col>
+      </Row>
       <Row className="blogs">
         <Col>
-          <Row>
-            <Col className="title">
-              <p>Latest Posts</p>
-            </Col>
-          </Row>
           <Row>
             <BlogPost date="15.04.21" likes="25" comments="15" />
           </Row>
@@ -74,30 +78,26 @@ function Home() {
           </Link>
         </Col>
       </Row>
-      <Row className="projects">
+      <Row className="title">
         <Col>
-          <Row className="title">
-            <Col>
-              <p>Best Projects</p>
-            </Col>
-          </Row>
-          <Row>
-            {repos.map((repo) => {
-              return (
-                <Col>
-                  <Project
-                    projectName={repo.name.replace("-", " ")}
-                    linkUrl={repo.html_url}
-                    description={repo.description}
-                    language={repo.language}
-                    stars={repo.stargazers_count}
-                    forks={repo.forks}
-                  />
-                </Col>
-              );
-            })}
-          </Row>
+          <p>Best Projects</p>
         </Col>
+      </Row>
+      <Row className="projects">
+        {repos.map((repo) => {
+          return (
+            <Col>
+              <Project
+                projectName={repo.name.replace("-", " ")}
+                linkUrl={repo.html_url}
+                description={repo.description}
+                language={repo.language}
+                stars={repo.stargazers_count}
+                forks={repo.forks}
+              />
+            </Col>
+          );
+        })}
       </Row>
       <Row>
         <Col className="seeMore">
@@ -108,22 +108,6 @@ function Home() {
             </p>
           </Link>
         </Col>
-      </Row>
-      <Row className="socialIcons">
-        <Col></Col>
-        <Col>
-          <Icons.Github className="socialIcon" />
-        </Col>
-        <Col>
-          <Icons.Twitter className="socialIcon" />
-        </Col>
-        <Col>
-          <Icons.Linkedin className="socialIcon" />
-        </Col>
-        <Col>
-          <Icons.Spotify className="socialIcon" />
-        </Col>
-        <Col></Col>
       </Row>
     </Container>
   );

@@ -1,0 +1,26 @@
+$yellow: #ffd200;
+$gray: #5b5c63;
+
+.header {
+    margin-bottom: 50px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+    .navbar {
+        width: 43%;
+        list-style: none;
+        color: $gray;
+        text-decoration: none;
+        li {
+            .link {
+                text-decoration: none;
+                color: $gray;
+            }
+        }
+    }
+    .meetButton {
+        text-decoration: none;
+        color: $yellow;
+    }
+}
