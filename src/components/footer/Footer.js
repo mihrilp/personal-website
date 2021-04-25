@@ -5,25 +5,33 @@ import * as Icons from "../../components/icons";
 
 const Footer = () => {
   return (
-    <Container>
-      <Row className="title">
-        <Col>Let's Connect:</Col>
-      </Row>
+    <Container className="footer">
       <Row>
-        <Col></Col>
-        <Col>
-          <Icons.Github className="socialIcon" />
+        <Col md={4} className="text">
+          <Row style={{ alignItems: "center" }}>
+            Let's <Icons.Arrow className="arrowIcon" />
+          </Row>
+          <Row>Connect</Row>
         </Col>
-        <Col>
-          <Icons.Twitter className="socialIcon" />
+        <Col md={8}>
+          <Row>
+            <Col>
+              <Icons.Github className="socialIcon" />
+            </Col>
+            <Col>
+              <Icons.Twitter className="socialIcon" />
+            </Col>
+            <Col>
+              <Icons.Linkedin className="socialIcon" />
+            </Col>
+            <Col>
+              <Icons.Spotify className="socialIcon" />
+            </Col>
+            <Col>
+              <Icons.Telegram className="socialIcon" />
+            </Col>
+          </Row>
         </Col>
-        <Col>
-          <Icons.Linkedin className="socialIcon" />
-        </Col>
-        <Col>
-          <Icons.Spotify className="socialIcon" />
-        </Col>
-        <Col></Col>
       </Row>
     </Container>
   );

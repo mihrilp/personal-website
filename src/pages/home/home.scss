@@ -2,19 +2,19 @@ $gray: #5b5c63;
 $turquoise: #26c6da;
 
 .container {
-    padding: 30px;
     .title {
         font-size: 35px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         font-weight: bold;
         color: $turquoise;
     }
     .about {
         text-align: center;
-        margin-bottom: 70px;
+        margin-bottom: 80px;
+        padding: 0px 70px;
     }
     .seeMore {
-        margin-bottom: 60px;
+        margin-bottom: 100px;
         .link {
             font-size: 18px;
             font-weight: bold;

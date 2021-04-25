@@ -60,12 +60,8 @@ function Home() {
       </Row>
       <Row className="blogs">
         <Col>
-          <Row>
-            <BlogPost date="15.04.21" likes="25" comments="15" />
-          </Row>
-          <Row>
-            <BlogPost date="16.04.21" likes="27" comments="13" />
-          </Row>
+          <BlogPost date="15.04.21" likes="25" comments="15" />
+          <BlogPost date="16.04.21" likes="27" comments="13" />
         </Col>
       </Row>
       <Row>

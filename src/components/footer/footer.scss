@@ -1,0 +1,13 @@
+$turquoise: #26c6da;
+
+.footer {
+    background-color: "#212930";
+    .text {
+        color: $turquoise;
+        font-weight: bold;
+        font-size: 40px;
+        .arrowIcon {
+            margin-left: 15px;
+        }
+    }
+}
