@@ -8,31 +8,31 @@ const Header = () => {
   return (
     <Container>
       <Row className="header">
-        <Col md={8}>
-          <ul className="navbar">
-            <li>
+        <Col md={10} className="navbar">
+          <Row>
+            <Col>
               <NavLink className="link" to="/">
                 <Ufo />
               </NavLink>
-            </li>
-            <li>
+            </Col>
+            <Col>
               <NavLink className="link" to="/blog">
                 Blog
               </NavLink>
-            </li>
-            <li>
+            </Col>
+            <Col>
               <NavLink className="link" to="/projects">
                 Projects
               </NavLink>
-            </li>
-            <li>
+            </Col>
+            <Col>
               <NavLink className="link" to="/about">
                 About
               </NavLink>
-            </li>
-          </ul>
+            </Col>
+          </Row>
         </Col>
-        <Col md={4}>
+        <Col md={2}>
           <a className="meetButton" href="mailto: mihrilp@gmail.com">
             Let's Meet <Hello />
           </a>

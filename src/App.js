@@ -2,7 +2,6 @@ import "./style.scss";
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Projects from "./pages/projejcts/Projects";
 import Blog from "./pages/blog/Blog";
@@ -19,7 +18,6 @@ function App() {
           <Route path="/projects" component={Projects} />
           <Route path="/about" component={About} />
         </Switch>
-        <Footer />
       </Container>
     </Router>
   );

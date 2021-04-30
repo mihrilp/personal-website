@@ -4,17 +4,13 @@ $gray: #5b5c63;
 .header {
     margin-bottom: 70px;
     margin-top: 70px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     align-items: center;
     .navbar {
-        width: 43%;
-        list-style: none;
-        li {
-            .link {
-                text-decoration: none;
-                color: $gray;
-            }
+        .link {
+            text-decoration: none;
+            color: $gray;
         }
     }
     .meetButton {

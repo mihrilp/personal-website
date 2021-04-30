@@ -1,0 +1,14 @@
+$gray: #5b5c63;
+
+.connect {
+    padding: 50px;
+    .text {
+        color: $gray;
+        font-weight: bold;
+        font-size: 20px;
+        border-bottom: 0.3px solid #b3b3b3;
+        .arrowIcon {
+            margin-left: 15px;
+        }
+    }
+}

@@ -5,27 +5,33 @@ import * as Icons from "../../components/icons";
 
 const About = () => {
   return (
-    <Container className="aboutContainer">
-      <Row className="about">
-        <Col md={4}>
-          <img className="image" src="./images/pp.jpg" alt="me" />
-        </Col>
-        <Col md={8} className="text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            velit ex cupiditate saepe. Facere, corrupti! Nemo, optio doloribus.
-            Illo accusantium recusandae dicta qui voluptatem enim voluptatibus
-            dolorum quibusdam veritatis eius. lorem20 ex cupiditate saepe.
-            Facere, corrupti! Nemo, optio doloribus. Illo accusantium recusandae
-            dicta qui voluptatem enim voluptatibus dolorum quibusdam veritatis
-            eius. lorem20
-          </p>
+    <Container className="about">
+      <Row>
+        <Row className="image">
+          <img className="me" src="./images/pp.jpg" alt="me" />
+        </Row>
+        <Row className="text">
+          <Col>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              velit ex cupiditate saepe. Facere, corrupti! Nemo, optio
+              doloribus. Illo accusantium recusandae dicta qui voluptatem enim
+              voluptatibus dolorum quibusdam veritatis eius. lorem20 ex
+              cupiditate saepe. Facere, corrupti! Nemo, optio doloribus. Illo
+              accusantium recusandae dicta qui voluptatem enim voluptatibus
+              dolorum quibusdam veritatis eius. lorem20
+            </p>
+          </Col>
+        </Row>
+      </Row>
+      <Row className="title">
+        <Col>
+          <p>Skills:</p>
         </Col>
       </Row>
-      <Row>
+      <Row className="skills">
         <Col>
-          <p className="title">Skills:</p>
-          <Row className="skills">
+          <Row style={{ marginBottom: 50 }}>
             <Col>
               <Icons.Html className="icon" />
               HTML
@@ -38,6 +44,9 @@ const About = () => {
               <Icons.Javascript className="icon" />
               JAVASCRIPT
             </Col>
+          </Row>
+          <Row>
+            <Col></Col>
             <Col>
               <Icons.React className="icon" />
               REACT
@@ -46,6 +55,7 @@ const About = () => {
               <Icons.Python className="icon" />
               PYTHON
             </Col>
+            <Col></Col>
           </Row>
         </Col>
       </Row>

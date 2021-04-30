@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import BlogPost from "../../components/blog_post/BlogPost";
 import Project from "../../components/project/Project";
+import Connect from "../../components/connect/Connect";
 import * as Icons from "../../components/icons";
 
 const dynamicSort = (property) => {
@@ -103,6 +104,11 @@ function Home() {
               <Icons.Click className="clickIcon" />
             </p>
           </Link>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Connect />
         </Col>
       </Row>
     </Container>
