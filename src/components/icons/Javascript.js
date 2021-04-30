@@ -3,8 +3,8 @@ import * as React from "react";
 function SvgJavascript(props) {
   return (
     <svg
-      width={35}
-      height={35}
+      width={30}
+      height={30}
       viewBox="0 0 440 500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ function SvgJavascript(props) {
       <path
         opacity={0.986}
         d="M74.442 356.261l-.171-52.659s54.202 15.266 84.906 23.156l.514-230.188h43.739v294.51L74.442 356.261z"
-        fill="#000000"
+        fill="#0f141a"
         fillOpacity={0.922}
       />
       <path

@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <Container>
       <Row>
-        <Col>Projects Page</Col>
+        <Col>there's nothing in here for now</Col>
       </Row>
     </Container>
   );

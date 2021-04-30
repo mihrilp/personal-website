@@ -5,7 +5,9 @@ const Blog = () => {
   return (
     <Container>
       <Row>
-        <Col>Blog Page</Col>
+        <Col>
+          <p>there's nothing in here for now</p>
+        </Col>
       </Row>
     </Container>
   );

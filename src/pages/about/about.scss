@@ -1,18 +1,16 @@
 $gray: #5b5c63;
 
-.about {
-    .image {
-        margin: 50px;
+.aboutContainer {
+    padding: 0px 40px;
+    .about {
         align-items: center;
-        display: flex;
-        justify-content: center;
-        .me {
+        .image {
             height: 300px;
-            width: 400px;
+            width: 300px;
         }
-    }
-    .text {
-        margin-bottom: 40px;
+        .text {
+            padding: 40px 0px;
+        }
     }
     .skills {
         padding: 40px;
@@ -20,6 +18,7 @@ $gray: #5b5c63;
         font-weight: bold;
         border: 0.5px solid $gray;
         border-radius: 15px;
+        margin-bottom: 100px;
         .icon {
             margin-right: 6px;
         }

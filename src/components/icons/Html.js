@@ -5,8 +5,8 @@ function SvgHtml(props) {
     <svg
       viewBox="-30 0 512 512"
       xmlns="http://www.w3.org/2000/svg"
-      width={35}
-      height={35}
+      width={30}
+      height={30}
       {...props}
     >
       <path
@@ -16,9 +16,9 @@ function SvgHtml(props) {
       <path d="M452.398 0l-31.8 448.102L226.199 512V0zm0 0" fill="#5b5c63" />
       <path
         d="M367.5 136H145.2l5.398 75h211.504l-12.903 181.598-123 41.101-123-41.101L99 332h60l1.2 16.5 66 21.898 66-21.898 5.398-77.5H94.5L80.7 76h291zm0 0"
-        fill="#000000"
+        fill="#0f141a"
       />
-      <g fill="#000000">
+      <g fill="#0f141a">
         <path d="M362.102 211l-12.903 181.598-123 41.101v-63.3l66-21.899 5.399-77.5h-71.399v-60zm0 0M371.7 76l-4.2 60H226.2V76zm0 0" />
       </g>
     </svg>

@@ -22,3 +22,5 @@ export { default as Html } from "./Html";
 export { default as Css } from "./Css";
 export { default as Python } from "./Python";
 export { default as Javascript } from "./Javascript";
+export { default as VsCode } from "./VsCode";
+export { default as Bootstrap } from "./Bootstrap";

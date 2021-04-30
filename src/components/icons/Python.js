@@ -3,8 +3,8 @@ import * as React from "react";
 function SvgPython(props) {
   return (
     <svg
-      width={35}
-      height={35}
+      width={30}
+      height={30}
       viewBox="0 0 256 255"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
