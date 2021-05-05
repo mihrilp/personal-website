@@ -38,10 +38,12 @@ function Home() {
   }, []);
 
   return (
-    <Container className="container">
+    <Container className="homeContainer">
       <Row className="title">
         <Col>
-          <p>Hey there, I'm Mihriban {<Icons.Alien />} </p>
+          <p className="entry">
+            Hey there, I'm Mihriban <Icons.Alien />
+          </p>
         </Col>
       </Row>
       <Row className="about">

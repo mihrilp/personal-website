@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Star, Fork, Circle } from "../icons/";
 
 const Project = ({
+  image,
   projectName,
   linkUrl,
   description,
@@ -14,26 +15,12 @@ const Project = ({
   return (
     <Container className="project">
       <a href={linkUrl}>
-        <Row className="projectName">
+        <Row className="image">{image}</Row>
+        <Row className="name">
           <Col>{projectName}</Col>
         </Row>
-        <Row></Row>
         <Row className="description">
           <Col>{description}</Col>
-        </Row>
-        <Row className="bottomLine">
-          <Col>
-            <Circle className="icon" />
-            {language}
-          </Col>
-          <Col>
-            <Star className="icon" />
-            {stars} Star
-          </Col>
-          <Col>
-            <Fork className="icon" />
-            {forks} Fork
-          </Col>
         </Row>
       </a>
     </Container>

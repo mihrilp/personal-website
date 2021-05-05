@@ -24,3 +24,4 @@ export { default as Python } from "./Python";
 export { default as Javascript } from "./Javascript";
 export { default as VsCode } from "./VsCode";
 export { default as Bootstrap } from "./Bootstrap";
+export { default as Calculator } from "./Calculator";

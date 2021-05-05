@@ -4,7 +4,7 @@ function SvgGithub(props) {
   return (
     <a href="https://github.com/mihrilp">
       <svg
-        width={80}
+        width={70}
         height={50}
         viewBox="0 0 222 60"
         fill="none"

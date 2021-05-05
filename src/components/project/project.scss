@@ -6,31 +6,25 @@ $text-color: #ebebec;
     border: 0.5px solid $gray;
     cursor: pointer;
     border-radius: 15px;
-    padding: 30px;
     margin-bottom: 40px;
+    background-color: #253141;
+    text-align: start;
     a {
         text-decoration: none;
         color: $text-color;
     }
-    .projectName {
-        font-size: 20px;
-        color: $yellow;
-        margin-bottom: 15px;
+    .image {
+        margin-bottom: 20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 250px;
     }
-    .language {
-        font-size: 16px;
-        margin-bottom: 15px;
-        font-weight: lighter;
-        color: $gray;
+    .name {
+        font-weight: bold;
+        font-size: 23px;
+        margin-bottom: 5px;
     }
     .description {
-        margin-bottom: 50px;
-        font-weight: lighter;
-    }
-    .bottomLine {
-        font-size: 17px;
-    }
-    .icon {
-        margin-right: 8px;
+        margin-bottom: 5px;
     }
 }

@@ -1,0 +1,36 @@
+$yellow: #ffd200;
+$gray: #5b5c63;
+$text-color: #ebebec;
+
+.project {
+    border: 0.5px solid $gray;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 40px;
+    a {
+        text-decoration: none;
+        color: $text-color;
+    }
+    .projectName {
+        font-size: 20px;
+        color: $yellow;
+        margin-bottom: 15px;
+    }
+    .language {
+        font-size: 16px;
+        margin-bottom: 15px;
+        font-weight: lighter;
+        color: $gray;
+    }
+    .description {
+        margin-bottom: 50px;
+        font-weight: lighter;
+    }
+    .bottomLine {
+        font-size: 17px;
+    }
+    .icon {
+        margin-right: 8px;
+    }
+}

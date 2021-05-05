@@ -4,7 +4,7 @@ function SvgTwitter(props) {
   return (
     <a href="https://twitter.com/mihriinspace">
       <svg
-        width={100}
+        width={90}
         height={50}
         viewBox="0 0 739 150"
         fill="none"
