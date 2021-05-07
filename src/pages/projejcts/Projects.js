@@ -78,34 +78,6 @@ const Projects = () => {
                 />
               </Col>
             </Row>
-            <Row>
-              <Col>
-                <Project
-                  image={
-                    <img className="image" src="./images/todo.png" alt="me" />
-                  }
-                  projectName={repos[0].name.replace("-", " ")}
-                  linkUrl={repos[0].html_url}
-                  description={repos[0].description}
-                  language={repos[0].language}
-                  stars={repos[0].stargazers_count}
-                  fork={repos[0].forks}
-                />
-              </Col>
-              <Col>
-                <Project
-                  image={
-                    <img className="image" src="./images/todo.png" alt="me" />
-                  }
-                  projectName={repos[1].name.replace("-", " ")}
-                  linkUrl={repos[1].html_url}
-                  description={repos[1].description}
-                  language={repos[1].language}
-                  stars={repos[1].stargazers_count}
-                  fork={repos[1].forks}
-                />
-              </Col>
-            </Row>
           </>
         )}
       </Row>

@@ -6,7 +6,7 @@ import { Hello, Ufo } from "../../components/icons";
 
 const Header = () => {
   return (
-    <Container>
+    <Container className="headerContainer">
       <Row className="header">
         <Col md={10} className="navbar">
           <Row>

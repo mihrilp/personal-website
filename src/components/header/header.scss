@@ -1,22 +1,23 @@
 $yellow: #ffd200;
 $gray: #5b5c63;
 
-.header {
+.headerContainer {
     padding: 0px 40px;
-    margin-bottom: 70px;
-    margin-top: 70px;
-    font-size: 20px;
-    font-weight: 400;
-    align-items: center;
-    .navbar {
+    margin: 70px 0px;
+    .header {
+        font-size: 20px;
+        font-weight: 400;
         align-items: center;
-        .link {
-            text-decoration: none;
-            color: $gray;
+        .navbar {
+            align-items: center;
+            .link {
+                text-decoration: none;
+                color: $gray;
+            }
         }
-    }
-    .meetButton {
-        text-decoration: none;
-        color: $yellow;
+        .meetButton {
+            text-decoration: none;
+            color: $yellow;
+        }
     }
 }
