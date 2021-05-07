@@ -1,9 +1,9 @@
 import React from "react";
-import "./x.scss";
+import "./bestProject.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import { Star, Fork, Circle } from "../icons/";
 
-const XProject = ({
+const BestProject = ({
   projectName,
   linkUrl,
   description,
@@ -12,7 +12,7 @@ const XProject = ({
   forks,
 }) => {
   return (
-    <Container className="project">
+    <Container className="bestProject">
       <a href={linkUrl}>
         <Row>
           <Col>
@@ -52,4 +52,4 @@ const XProject = ({
   );
 };
 
-export default XProject;
+export default BestProject;

@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import "./home.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import BlogPost from "../../components/blog_post/BlogPost";
-import Project from "../../components/project/Project";
+import LatestPost from "../../components/latest_post/LatestPost";
+import BestProject from "../../components/best_project/BestProject";
 import Connect from "../../components/connect/Connect";
 import * as Icons from "../../components/icons";
 
@@ -41,7 +41,7 @@ function Home() {
     <Container className="homeContainer">
       <Row className="title">
         <Col>
-          <p className="entry">
+          <p>
             Hey there, I'm Mihriban <Icons.Alien />
           </p>
         </Col>
@@ -49,10 +49,11 @@ function Home() {
       <Row className="about">
         <Col>
           <p>
-            I'm a student of Computer Engineering. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Amet cum temporibus fugiat culpa unde
-            vel corrupti, quasi tempora dignissimos ut?Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Quos, corrupti!
+            I'm a third-year student of Computer Engineering. Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Amet cum temporibus fugiat
+            culpa unde vel corrupti, quasi tempora dignissimos ut?Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Quos, corrupti! Welcome
+            to my personal website.
           </p>
         </Col>
       </Row>
@@ -63,8 +64,8 @@ function Home() {
       </Row>
       <Row className="blogs">
         <Col>
-          <BlogPost date="15.04.21" likes="25" comments="15" />
-          <BlogPost date="16.04.21" likes="27" comments="13" />
+          <LatestPost date="15.04.21" likes="25" comments="15" />
+          <LatestPost date="16.04.21" likes="27" comments="13" />
         </Col>
       </Row>
       <Row>
@@ -86,7 +87,7 @@ function Home() {
         {repos.map((repo) => {
           return (
             <Col>
-              <Project
+              <BestProject
                 projectName={repo.name.replace("-", " ")}
                 linkUrl={repo.html_url}
                 description={repo.description}

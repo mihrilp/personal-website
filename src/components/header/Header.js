@@ -30,7 +30,6 @@ const Header = () => {
                 About
               </NavLink>
             </Col>
-            <Col></Col>
           </Row>
         </Col>
         <Col md={2}>

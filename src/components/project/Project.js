@@ -15,7 +15,7 @@ const Project = ({
   return (
     <Container className="project">
       <a href={linkUrl}>
-        <Row className="image">{image}</Row>
+        <Row>{image}</Row>
         <Row className="name">
           <Col>{projectName}</Col>
         </Row>

@@ -14,15 +14,15 @@ $gray: #5b5c63;
 body {
   background-color: $background-color;
   color: $text-color;
+
   .container {
     display: flex;
     flex-direction: column;
-    text-align: center;
     font-family: $font-family;
     font-size: 20px;
     font-weight: lighter;
     .title {
-      font-size: 33px;
+      font-size: 35px;
       margin-bottom: 30px;
       font-weight: bold;
       color: $turquoise;

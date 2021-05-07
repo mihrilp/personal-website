@@ -21,9 +21,7 @@ const dynamicSort = (property) => {
 };
 
 const Projects = () => {
-  const [repos, setRepos] = useState([
-    { name: "", stargazers_count: 0, language: "" },
-  ]);
+  const [repos, setRepos] = useState([]);
 
   useEffect(() => {
     fetch("https://api.github.com/users/mihrilp/repos")
@@ -33,38 +31,83 @@ const Projects = () => {
       );
   }, []);
 
-  console.log(repos);
+  useEffect(() => {
+    if (repos.length > 0) {
+      console.log(repos);
+    }
+  }, [repos]);
 
   return (
     <Container className="projectsContainer">
       <Row className="title">
         <Col>My Projects</Col>
       </Row>
+      <Row>
+        <Col></Col>
+      </Row>
       <Row className="projects">
-        <Col>
-          <Project
-            image={<img className="image" src="./images/todo.png" alt="me" />}
-            projectName={repos[0].name.replace("-", " ")}
-            linkUrl={repos[0].html_url}
-            description={repos[0].description}
-          />
-        </Col>
-        <Col>
-          <Project
-            image={<img className="image" src="./images/todo.png" alt="me" />}
-            projectName={repos[0].name.replace("-", " ")}
-            linkUrl={repos[0].html_url}
-            description={repos[0].description}
-          />
-        </Col>
-        <Col>
-          <Project
-            image={<img className="image" src="./images/todo.png" alt="me" />}
-            projectName={repos[0].name.replace("-", " ")}
-            linkUrl={repos[0].html_url}
-            description={repos[0].description}
-          />
-        </Col>
+        {repos.length <= 0 ? (
+          <p>Loading...</p>
+        ) : (
+          <>
+            <Row>
+              <Col>
+                <Project
+                  image={
+                    <img className="image" src="./images/todo.png" alt="me" />
+                  }
+                  projectName={repos[0].name.replace("-", " ")}
+                  linkUrl={repos[0].html_url}
+                  description={repos[0].description}
+                  language={repos[0].language}
+                  stars={repos[0].stargazers_count}
+                  fork={repos[0].forks}
+                />
+              </Col>
+              <Col>
+                <Project
+                  image={
+                    <img className="image" src="./images/todo.png" alt="me" />
+                  }
+                  projectName={repos[1].name.replace("-", " ")}
+                  linkUrl={repos[1].html_url}
+                  description={repos[1].description}
+                  language={repos[1].language}
+                  stars={repos[1].stargazers_count}
+                  fork={repos[1].forks}
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Project
+                  image={
+                    <img className="image" src="./images/todo.png" alt="me" />
+                  }
+                  projectName={repos[0].name.replace("-", " ")}
+                  linkUrl={repos[0].html_url}
+                  description={repos[0].description}
+                  language={repos[0].language}
+                  stars={repos[0].stargazers_count}
+                  fork={repos[0].forks}
+                />
+              </Col>
+              <Col>
+                <Project
+                  image={
+                    <img className="image" src="./images/todo.png" alt="me" />
+                  }
+                  projectName={repos[1].name.replace("-", " ")}
+                  linkUrl={repos[1].html_url}
+                  description={repos[1].description}
+                  language={repos[1].language}
+                  stars={repos[1].stargazers_count}
+                  fork={repos[1].forks}
+                />
+              </Col>
+            </Row>
+          </>
+        )}
       </Row>
     </Container>
   );
