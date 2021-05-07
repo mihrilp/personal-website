@@ -2,16 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./about.scss";
 import * as Icons from "../../components/icons";
-import Connect from "../../components/connect/Connect";
 
 const About = () => {
   return (
     <Container className="aboutContainer">
       <Row className="about">
-        <Col md={4}>
-          <img className="image" src="./images/pp.jpeg" alt="me" />
-        </Col>
-        <Col></Col>
         <Col md={7} className="text">
           <p className="title">About me:</p>
           <p>
@@ -23,6 +18,16 @@ const About = () => {
             dicta qui voluptatem enim voluptatibus dolorum quibusdam veritatis
             eius. lorem20
           </p>
+          <p className="socialIcons">
+            Let's Connect : <Icons.Twitter2 className="socialIcon" />
+            <Icons.Github2 className="socialIcon" />
+            <Icons.Linkedin2 className="socialIcon" />
+            <Icons.Spotify2 className="socialIcon" />
+          </p>
+        </Col>
+        <Col></Col>
+        <Col md={4}>
+          <img className="image" src="./images/pp.jpeg" alt="me" />
         </Col>
       </Row>
       <Row className="title">
@@ -31,7 +36,7 @@ const About = () => {
         </Col>
       </Row>
       <Row>
-        <Col className="skills">
+        <Col className="skills" md={8}>
           <Row style={{ marginBottom: 50 }}>
             <Col>
               <Icons.Html className="icon" />
@@ -45,10 +50,6 @@ const About = () => {
               <Icons.Javascript className="icon" />
               JAVASCRIPT
             </Col>
-            <Col>
-              <Icons.React className="icon" />
-              REACT
-            </Col>
           </Row>
           <Row>
             <Col>
@@ -56,8 +57,8 @@ const About = () => {
               PYTHON
             </Col>
             <Col>
-              <Icons.Bootstrap className="icon" />
-              BOOTSTRAP
+              <Icons.React className="icon" />
+              REACT
             </Col>
             <Col>
               <Icons.VsCode className="icon" />
@@ -65,16 +66,7 @@ const About = () => {
             </Col>
           </Row>
         </Col>
-      </Row>
-      <Row className="title">
-        <Col>
-          <p>Let's Connect:</p>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Connect />
-        </Col>
+        <Col></Col>
       </Row>
     </Container>
   );

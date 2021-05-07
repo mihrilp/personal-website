@@ -3,24 +3,36 @@ $gray: #5b5c63;
 .aboutContainer {
     padding: 0px 40px;
     .about {
+        margin-bottom: 70px;
         align-items: center;
         .image {
             height: 300px;
             width: 300px;
+            border-radius: 50%;
         }
         .text {
-            padding: 40px 0px;
+            .socialIcons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 30px;
+                font-weight: bold;
+                width: 60%;
+                align-items: center;
+                .socialIcon {
+                    cursor: pointer;
+                }
+            }
         }
     }
     .skills {
-        padding: 40px;
-        color: $gray;
-        font-weight: bold;
         border: 0.5px solid $gray;
         border-radius: 15px;
-        margin-bottom: 100px;
-        .icon {
-            margin-right: 6px;
-        }
+        margin-bottom: 70px;
+        padding: 30px;
+        font-size: 18px;
+    }
+    .icon {
+        margin-right: 8px;
     }
 }

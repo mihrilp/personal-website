@@ -1,13 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import "./blog.scss";
 
 const Blog = () => {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <p>there's nothing in here for now</p>
-        </Col>
+    <Container className="blogContainer">
+      <Row className="title">
+        <Col>Blog</Col>
       </Row>
     </Container>
   );
