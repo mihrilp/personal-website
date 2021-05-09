@@ -24,3 +24,4 @@ export { default as Github2 } from "./Github2";
 export { default as Linkedin2 } from "./Linkedin2";
 export { default as Spotify2 } from "./Spotify2";
 export { default as Twitter2 } from "./Twitter2";
+export { default as Code } from "./Code";

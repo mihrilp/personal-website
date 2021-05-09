@@ -16,11 +16,32 @@ const Project = ({
     <Container className="project">
       <a href={linkUrl}>
         <Row>{image}</Row>
-        <Row className="name">
-          <Col>{projectName}</Col>
-        </Row>
-        <Row className="description">
-          <Col>{description}</Col>
+        <Row className="text">
+          <Col>
+            <Row className="name">
+              <Col>{projectName}</Col>
+            </Row>
+            <Row className="description">
+              <Col>{description}</Col>
+            </Row>
+            <Row>
+              <Col>
+                <p className="language">{language}</p>
+              </Col>
+              <Col>
+                <p className="star">
+                  <Star />
+                  {stars} Star
+                </p>
+              </Col>
+              <Col>
+                <p className="fork">
+                  <Fork />
+                  {forks} Fork
+                </p>
+              </Col>
+            </Row>
+          </Col>
         </Row>
       </a>
     </Container>

@@ -25,12 +25,14 @@ const dynamicSort = (property) => {
 };
 
 function Home() {
-  const [repos, setRepos] = useState([
-    { name: "", stargazers_count: 0, language: "" },
-  ]);
+  const [repos, setRepos] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/mihrilp/repos")
+    fetch("https://api.github.com/users/mihrilp/repos", {
+      headers: {
+        Authorization: `token ${process.env.REACT_APP_MY_GITHUB_TOKEN}`,
+      },
+    })
       .then((response) => response.json())
       .then((data) =>
         setRepos(data.sort(dynamicSort("-stargazers_count")).slice(0, 2))
@@ -84,9 +86,9 @@ function Home() {
         </Col>
       </Row>
       <Row className="projects">
-        {repos.map((repo) => {
+        {repos.map((repo, index) => {
           return (
-            <Col>
+            <Col key={index}>
               <BestProject
                 projectName={repo.name.replace("-", " ")}
                 linkUrl={repo.html_url}

@@ -7,6 +7,8 @@ import Projects from "./pages/projejcts/Projects";
 import Blog from "./pages/blog/Blog";
 import About from "./pages/about/About";
 
+require("dotenv").config();
+
 function App() {
   return (
     <Router>
