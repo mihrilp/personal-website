@@ -30,13 +30,11 @@ function Home() {
   useEffect(() => {
     fetch("https://api.github.com/users/mihrilp/repos", {
       headers: {
-        Authorization: `token ${process.env.REACT_APP_MY_GITHUB_TOKEN}`,
+        Authorization: `token ${process.env.MY_GITHUB_TOKEN}`,
       },
     })
       .then((response) => response.json())
-      .then((data) =>
-        setRepos(data.sort(dynamicSort("-stargazers_count")).slice(0, 2))
-      );
+      .then((data) => console.log(data));
   }, []);
 
   return (
