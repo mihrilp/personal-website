@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
-import Projects from "./pages/projejcts/Projects";
+import Projects from "./pages/projects/Projects";
 import Blog from "./pages/blog/Blog";
 import About from "./pages/about/About";
 

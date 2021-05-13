@@ -74,6 +74,7 @@ const Projects = () => {
                 description={repos[1].description}
               />
             </Col>
+            <Col md={{ span: 7 }}></Col>
           </>
         )}
       </Row>

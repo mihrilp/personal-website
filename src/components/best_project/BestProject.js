@@ -24,17 +24,18 @@ const BestProject = ({
               <Col>
                 {" "}
                 <p>{description}</p>
-                <p>
-                  <Circle className="icon" />
-                  made with {language}
-                </p>
               </Col>
             </Row>
             <Row>
               <Col></Col>
             </Row>
             <Row className="bottomLine">
-              <Col></Col>
+              <Col>
+                {" "}
+                <p>
+                  <Circle className="icon" /> {language}
+                </p>
+              </Col>
               <Col>
                 <Star className="icon" />
                 {stars} Star
@@ -43,7 +44,6 @@ const BestProject = ({
                 <Fork className="icon" />
                 {forks} Fork
               </Col>
-              <Col></Col>
             </Row>
           </Col>
         </Row>
