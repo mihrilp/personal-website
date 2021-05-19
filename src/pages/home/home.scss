@@ -1,13 +1,16 @@
 $gray: #5b5c63;
 
 .homeContainer {
-    padding: 0px 40px;
+    padding: 0px 80px;
     text-align: center;
     .about {
         text-align: center;
         margin-bottom: 80px;
-        font-size: 24px;
-        padding: 0px 40px;
+
+        font-weight: 400;
+    }
+    .blogs {
+        align-items: center;
     }
     .seeMore {
         margin-bottom: 100px;

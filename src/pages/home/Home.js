@@ -26,6 +26,7 @@ const dynamicSort = (property) => {
 
 function Home() {
   const [repos, setRepos] = useState([]);
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     fetch("https://api.github.com/users/mihrilp/repos", {
@@ -37,6 +38,12 @@ function Home() {
       .then((data) =>
         setRepos(data.sort(dynamicSort("-stargazers_count")).slice(0, 2))
       );
+  }, []);
+
+  useEffect(() => {
+    fetch("https://dev.to/api/articles?username=mihrilp")
+      .then((response) => response.json())
+      .then((data) => setPosts(data));
   }, []);
 
   return (
@@ -65,10 +72,20 @@ function Home() {
         </Col>
       </Row>
       <Row className="blogs">
-        <Col>
-          <LatestPost date="15.04.21" likes="25" comments="15" />
-          <LatestPost date="16.04.21" likes="27" comments="13" />
-        </Col>
+        {posts.map((post, index) => {
+          return (
+            <Col key={index}>
+              <LatestPost
+                title={post.title}
+                date={post.readable_publish_date}
+                description={post.description}
+                reactions={post.public_reactions_count}
+                comments={post.comments_count}
+                url={post.url}
+              />
+            </Col>
+          );
+        })}
       </Row>
       <Row>
         <Col className="seeMore">
@@ -91,7 +108,7 @@ function Home() {
             <Col key={index}>
               <BestProject
                 projectName={repo.name.replace("-", " ")}
-                linkUrl={repo.html_url}
+                url={repo.html_url}
                 description={repo.description}
                 language={repo.language}
                 stars={repo.stargazers_count}

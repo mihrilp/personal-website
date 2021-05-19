@@ -5,7 +5,7 @@ import { Star, Fork, Circle } from "../icons/";
 
 const BestProject = ({
   projectName,
-  linkUrl,
+  url,
   description,
   language,
   stars,
@@ -13,7 +13,7 @@ const BestProject = ({
 }) => {
   return (
     <Container className="bestProject">
-      <a href={linkUrl}>
+      <a href={url}>
         <Row>
           <Col>
             <Row className="projectName">
@@ -31,7 +31,6 @@ const BestProject = ({
             </Row>
             <Row className="bottomLine">
               <Col>
-                {" "}
                 <p>
                   <Circle className="icon" /> {language}
                 </p>

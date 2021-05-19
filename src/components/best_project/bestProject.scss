@@ -13,24 +13,17 @@ $text-color: #ebebec;
         color: $text-color;
     }
     .projectName {
-        font-size: 20px;
+        font-size: 22px;
         color: $yellow;
         margin-bottom: 15px;
     }
-    .language {
-        font-size: 16px;
-        margin-bottom: 15px;
-        font-weight: lighter;
-        color: $gray;
-    }
     .description {
         margin-bottom: 50px;
-        font-weight: lighter;
     }
     .bottomLine {
         font-size: 17px;
     }
     .icon {
-        margin-right: 8px;
+        margin-right: 5px;
     }
 }

@@ -1,6 +1,7 @@
 $background-color: #0f141a;
 $text-color: #ebebec;
-$font-family: "Palanquin", sans-serif;
+$font-family: "Inter", sans-serif;
+
 $yellow: #ffd200;
 $turquoise: #26c6da;
 $gray: #5b5c63;
@@ -20,9 +21,8 @@ body {
     flex-direction: column;
     font-family: $font-family;
     font-size: 20px;
-    font-weight: lighter;
     .title {
-      font-size: 35px;
+      font-size: 34px;
       margin-bottom: 30px;
       font-weight: bold;
       color: $turquoise;
