@@ -1,3 +1,12 @@
+$gray: #343a40;
+
 .blogContainer {
     padding: 0px 40px;
+    .post {
+        border-bottom: 0.5px solid $gray;
+    }
+    .post:hover {
+        background-color: rgb(28, 37, 49, 0.5);
+        border-radius: 15px;
+    }
 }

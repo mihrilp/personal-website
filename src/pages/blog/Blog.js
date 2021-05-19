@@ -20,7 +20,7 @@ const Blog = () => {
       <Row>
         {posts.map((post, index) => {
           return (
-            <Col key={index}>
+            <Col key={index} className="post">
               <BlogPost
                 title={post.title}
                 date={post.readable_publish_date}

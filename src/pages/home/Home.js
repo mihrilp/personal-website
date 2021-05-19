@@ -46,6 +46,8 @@ function Home() {
       .then((data) => setPosts(data));
   }, []);
 
+  useEffect(() => {}, []);
+
   return (
     <Container className="homeContainer">
       <Row className="title">
