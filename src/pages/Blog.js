@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./blog.scss";
-import BlogPost from "../../components/blog_post/BlogPost";
+import "../styles/pages/blog.scss";
+import BlogPost from "../components/BlogPost";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);

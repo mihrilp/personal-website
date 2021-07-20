@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./blogPost.scss";
-import { Date, Arrow } from "../icons";
+import "../styles/components/blogPost.scss";
+import { Date, Arrow } from "./icons";
 
 const BlogPost = ({ title, date, description, url }) => {
   return (

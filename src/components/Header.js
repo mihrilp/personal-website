@@ -1,8 +1,8 @@
 import React from "react";
-import "./header.scss";
+import "../styles/components/header.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import { Hello, Ufo } from "../../components/icons";
+import { Hello, Ufo } from "./icons";
 
 const Header = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
+import "../styles/pages/about.scss";
 import { Container, Row, Col } from "react-bootstrap";
-import "./about.scss";
-import * as Icons from "../../components/icons";
+import * as Icons from "../components/icons";
 
 const About = () => {
   return (

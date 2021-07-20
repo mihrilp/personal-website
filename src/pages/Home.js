@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import "./home.scss";
+import "../styles/pages/home.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import LatestPost from "../../components/latest_post/LatestPost";
-import BestProject from "../../components/best_project/BestProject";
-import Connect from "../../components/connect/Connect";
-import * as Icons from "../../components/icons";
+import LatestPost from "../components/LatestPost";
+import BestProject from "../components/BestProject";
+import Connect from "../components/Connect";
+import * as Icons from "../components/icons";
 
 const dynamicSort = (property) => {
   var sortOrder = 1;

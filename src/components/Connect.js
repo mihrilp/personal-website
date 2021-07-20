@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./connect.scss";
-import * as Icons from "../icons";
+import "../styles/components/connect.scss";
+import * as Icons from "./icons";
 
 const Connect = () => {
   return (

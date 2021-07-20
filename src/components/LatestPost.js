@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./latestPost.scss";
-import { Date, Heart, Comment } from "../icons";
+import "../styles/components/latestPost.scss";
+import { Heart, Comment } from "./icons";
 
 const LatestPost = ({ title, date, reactions, comments, description, url }) => {
   return (

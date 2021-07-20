@@ -46,7 +46,8 @@ $text-color: #ebebec;
 }
 
 .project:hover {
-    -moz-box-shadow: 0 0 10px #ccc;
-    -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px #808080;
+    -webkit-box-shadow: 0 0 10px #808080;
+    box-shadow: 0 0 10px #808080;
+    border: 1 px solid #808080;
 }

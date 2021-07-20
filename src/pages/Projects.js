@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./projects.scss";
-import Project from "../../components/project/Project";
+import "../styles/pages/projects.scss";
+import Project from "../components/Project";
 
 const dynamicSort = (property) => {
   var sortOrder = 1;

@@ -1,10 +1,4 @@
-$background-color: #0f141a;
-$text-color: #ebebec;
-$font-family: "Inter", sans-serif;
-
-$yellow: #ffd200;
-$turquoise: #26c6da;
-$gray: #5b5c63;
+@import "./styles/variables.scss";
 
 * {
   margin: 0;

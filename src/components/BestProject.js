@@ -1,7 +1,7 @@
 import React from "react";
-import "./bestProject.scss";
+import "../styles/components/bestProject.scss";
 import { Container, Row, Col } from "react-bootstrap";
-import { Star, Fork, Circle } from "../icons/";
+import { Star, Fork, Circle } from "./icons";
 
 const BestProject = ({
   projectName,

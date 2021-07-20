@@ -1,17 +1,8 @@
-import React, { useState } from "react";
-import "./project.scss";
+import React from "react";
+import "../styles/components/project.scss";
 import { Container, Row, Col } from "react-bootstrap";
-import { Star, Fork, Circle } from "../icons/";
 
-const Project = ({
-  image,
-  projectName,
-  linkUrl,
-  description,
-  language,
-  stars,
-  forks,
-}) => {
+const Project = ({ image, projectName, linkUrl, description }) => {
   return (
     <Container className="project">
       <a href={linkUrl}>
