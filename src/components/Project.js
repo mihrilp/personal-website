@@ -2,15 +2,18 @@ import React from "react";
 import "../styles/components/project.scss";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Project = ({ image, projectName, linkUrl, description }) => {
+const Project = ({ image, projectName, linkUrl, description, languages }) => {
   return (
-    <Container className="project">
+    <Container className="project ">
       <a href={linkUrl}>
         <Row>{image}</Row>
-        <Row className="text">
+        <Row>
           <Col>
-            <Row className="name">
+            <Row className="projectName">
               <Col>{projectName}</Col>
+            </Row>
+            <Row className="languages">
+              <Col>{languages}</Col>
             </Row>
             <Row className="description">
               <Col>{description}</Col>

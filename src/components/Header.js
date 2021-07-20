@@ -9,7 +9,7 @@ const Header = () => {
     <Container className="headerContainer">
       <Row className="header">
         <Col md={10} className="navbar">
-          <Row>
+          <Row className="align-items-center">
             <Col>
               <NavLink className="link" to="/">
                 <Ufo />

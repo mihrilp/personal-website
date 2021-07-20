@@ -2,7 +2,7 @@ import * as React from "react";
 
 function SvgTwitter(props) {
   return (
-    <a href="https://twitter.com/mihriinspace">
+    <a href="https://twitter.com/mihriinspace" target="blank">
       <svg
         width={90}
         height={50}

@@ -1,53 +1,33 @@
-$yellow: #ffd200;
-$gray: #5b5c63;
-$text-color: #ebebec;
+@import "../variables.scss";
 
 .project {
     cursor: pointer;
-    border-radius: 15px;
     margin-bottom: 40px;
-    background-color: #1c2531;
-    transition: all 0.2s ease-in-out;
+    background-color: #2f3d51;
+    border-radius: 15px;
     a {
         text-decoration: none;
         color: $text-color;
     }
     .image {
-        margin-bottom: 10px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
         height: 250px;
         width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-bottom: 5px;
+        object-fit: cover;
     }
-    .text {
-        padding: 10px;
-        .name {
-            font-weight: bold;
-            font-size: 22px;
-            margin-bottom: 5px;
-        }
-        .description {
-            margin-bottom: 20px;
-        }
-        .star,
-        .language,
-        .fork {
-            font-size: 15px;
-            align-items: center;
-            font-weight: lighter;
-            background-color: rgba(38, 198, 218, 0.1);
-            padding: 7px;
-            border-radius: 8px;
-        }
-        .icom {
-            margin-right: 5px;
-        }
+    .projectName {
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 5px;
     }
-}
-
-.project:hover {
-    -moz-box-shadow: 0 0 10px #808080;
-    -webkit-box-shadow: 0 0 10px #808080;
-    box-shadow: 0 0 10px #808080;
-    border: 1 px solid #808080;
+    .languages {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
 }

@@ -2,7 +2,10 @@ import * as React from "react";
 
 function SvgSpotify(props) {
   return (
-    <a href="https://open.spotify.com/user/cl13omk222r2v8e3l70oxn6q8?si=a8f437ea3df74700">
+    <a
+      href="https://open.spotify.com/user/cl13omk222r2v8e3l70oxn6q8?si=a8f437ea3df74700"
+      target="blank"
+    >
       <svg
         width={100}
         height={50}

@@ -46,8 +46,6 @@ function Home() {
       .then((data) => setPosts(data));
   }, []);
 
-  useEffect(() => {}, []);
-
   return (
     <Container className="homeContainer">
       <Row className="title">
@@ -111,8 +109,7 @@ function Home() {
               <BestProject
                 projectName={repo.name.replace("-", " ")}
                 url={repo.html_url}
-                description={repo.description}
-                language={repo.language}
+                languages={repo.language}
                 stars={repo.stargazers_count}
                 forks={repo.forks}
               />

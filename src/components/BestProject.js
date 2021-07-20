@@ -22,7 +22,6 @@ const BestProject = ({
             <Row></Row>
             <Row className="description">
               <Col>
-                {" "}
                 <p>{description}</p>
               </Col>
             </Row>

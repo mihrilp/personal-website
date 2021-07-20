@@ -2,7 +2,7 @@ import * as React from "react";
 
 function SvgGithub(props) {
   return (
-    <a href="https://github.com/mihrilp">
+    <a href="https://github.com/mihrilp" target="blank">
       <svg
         width={70}
         height={50}

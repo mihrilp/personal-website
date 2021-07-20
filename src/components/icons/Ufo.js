@@ -4,8 +4,8 @@ function SvgUfo(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={44}
-      height={44}
+      width={45}
+      height={45}
       fill="#ffd200"
       viewBox="0 0 128 128"
       {...props}

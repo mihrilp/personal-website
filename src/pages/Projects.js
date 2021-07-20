@@ -50,7 +50,7 @@ const Projects = () => {
           <p>Loading...</p>
         ) : (
           <>
-            <Col md={{ span: 5 }}>
+            <Col>
               <Project
                 image={
                   <img
@@ -62,9 +62,10 @@ const Projects = () => {
                 projectName={repos[0].name.replace("-", " ")}
                 linkUrl={"https://github.com/mihrilp/scientific-calculator"}
                 description={repos[0].description}
+                languages="HTML, SCSS, REACT"
               />
             </Col>
-            <Col md={{ span: 5 }}>
+            <Col>
               <Project
                 image={
                   <img className="image" src="./images/todo.png" alt="me" />
@@ -72,9 +73,10 @@ const Projects = () => {
                 projectName={repos[1].name.replace("-", " ")}
                 linkUrl={"https://github.com/mihrilp/react-todoapp"}
                 description={repos[1].description}
+                languages="HTML, SCSS, REACT"
               />
             </Col>
-            <Col md={{ span: 7 }}></Col>
+            <Col></Col>
           </>
         )}
       </Row>
