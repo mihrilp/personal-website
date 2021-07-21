@@ -7,7 +7,8 @@ $gray: #5b5c63;
         .image {
             height: 280px;
             width: 280px;
-            border-radius: 50%;
+            object-fit: cover;
+            border-radius: 15px;
         }
         .text {
             .socialIcons {

@@ -108,8 +108,9 @@ function Home() {
             <Col key={index}>
               <BestProject
                 projectName={repo.name.replace("-", " ")}
+                description={repo.description}
                 url={repo.html_url}
-                languages={repo.language}
+                language={repo.language}
                 stars={repo.stargazers_count}
                 forks={repo.forks}
               />
