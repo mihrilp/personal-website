@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+
+.header {
+    margin: 90px 0px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .navbar {
+        .link {
+            text-decoration: none;
+            color: $gray;
+        }
+    }
+    .meetButton {
+        text-decoration: none;
+        color: $yellow;
+    }
+}

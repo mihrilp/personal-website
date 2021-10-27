@@ -1,0 +1,20 @@
+@import "./styles/variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-family;
+  font-size: $text-font;
+  .title {
+    font-size: $title-font;
+    margin-bottom: 45px;
+    font-weight: bold;
+    color: $turquoise;
+  }
+}
