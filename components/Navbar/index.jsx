@@ -9,18 +9,18 @@ export default function Navbar() {
         <Link href="/">
           <Ufo />
         </Link>
-        <Link className={styles.link} href="/blog">
-          Blog
+        <Link href="/blog">
+          <a className={styles.link}>Blog</a>
         </Link>
-        <Link className={styles.link} href="/projects">
-          Projects
+        <Link href="/projects">
+          <a className={styles.link}>Projects</a>
         </Link>
         <Link className={styles.link} href="/about">
-          About
+          <a className={styles.link}>About</a>
         </Link>
       </div>
-      <div>
-        <a className="meetButton" href="mailto: mihrilp@gmail.com">
+      <div className={styles.meet}>
+        <a className={styles.meetButton} href="mailto: mihrilp@gmail.com">
           Let's Meet <Hello />
         </a>
       </div>
