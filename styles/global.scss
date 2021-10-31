@@ -1,4 +1,4 @@
-@import "./styles/variables.scss";
+@import "./variables.scss";
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@ body {
   background-color: $background-color;
   color: $text-color;
   font-family: $font-family;
-  font-size: $text-font;
+  font-size: 40px;
   .title {
     font-size: $title-font;
     margin-bottom: 45px;

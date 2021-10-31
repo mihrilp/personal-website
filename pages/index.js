@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar/index";
+import Navbar from "../components/navbar";
 
 export default function Home() {
   return (
-    <div home>
+    <div>
       <Head>
-        <title>siteTitle</title>
+        <title>Mihriban Alp</title>
       </Head>
       <Navbar />
     </div>
