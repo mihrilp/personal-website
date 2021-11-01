@@ -10,7 +10,8 @@ body {
   background-color: $background-color;
   color: $text-color;
   font-family: $font-family;
-  font-size: 40px;
+  font-size: $text-font;
+  line-height: 1.5;
   .title {
     font-size: $title-font;
     margin-bottom: 45px;
