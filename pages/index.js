@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 import LatestPost from "../components/LatestPost";
 import * as Icons from "../components/icons";
 import styled from "styled-components";
-import { getPosts } from "./api";
+import axios from "axios";
 
 const Container = styled.div`
   display: flex;
@@ -34,8 +34,23 @@ const Title = styled.h2`
   margin-bottom: 45px;
 `;
 
-export default function Home() {
-  console.log(getPosts());
+export async function getStaticProps() {
+  const { data } = await axios.get(
+    "https://dev.to/api/articles?username=mihrilp"
+  );
+
+  if (!data) {
+    return {
+      notFound: true,
+    };
+  }
+  return {
+    props: { data },
+  };
+}
+
+export default function Home({ data }) {
+  console.log(data[0]);
   return (
     <Container>
       <Head>
@@ -56,7 +71,15 @@ export default function Home() {
       </Section>
       <Section>
         <Title>Latest Posts</Title>
-        <LatestPost title="lddisfi" />
+        {data.map((item, key) => (
+          <LatestPost
+            key={key}
+            url={item.url}
+            title={item.title}
+            date={item.readable_publish_date}
+            description={item.description}
+          />
+        ))}
       </Section>
     </Container>
   );
