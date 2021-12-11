@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { Heart, Comment } from "./icons";
-import { Container } from "../components/Container";
+
+const Wrapper = styled.div`
+  padding: 25px;
+  border: 0.5px solid #5b5c63;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 40px;
+`;
 
 const BlogTitle = styled.h3`
   font-size: 24px;
@@ -36,7 +43,7 @@ export default function LatestPost({
   comments,
 }) {
   return (
-    <Container>
+    <Wrapper>
       <a href={url}>
         <BlogTitle>{title}</BlogTitle>
       </a>
@@ -48,6 +55,6 @@ export default function LatestPost({
         <Comment />
         {comments} comments
       </Section>
-    </Container>
+    </Wrapper>
   );
 }

@@ -4,18 +4,7 @@ import LatestPost from "../components/LatestPost";
 import * as Icons from "../components/icons";
 import styled from "styled-components";
 import axios from "axios";
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1140px;
-`;
+import { Flex } from "../styles/uielements";
 
 const Section = styled.div`
   display: flex;
@@ -52,21 +41,21 @@ export async function getStaticProps() {
 export default function Home({ data }) {
   console.log(data[0]);
   return (
-    <Container>
+    <Flex direction="column">
       <Head>
         <title>Mihriban Alp</title>
       </Head>
-      <Navbar />
+
       <Section>
         <Title>
-          Hey there, I'm Mihriban <Icons.Alien />
+          Hey there, I&apos;m Mihriban <Icons.Alien />
         </Title>
         <p>
-          I'm a third-year student of Computer Engineering. Lorem ipsum dolor
-          sit amet, consectetur adipisicing elit. Amet cum temporibus fugiat
-          culpa unde vel corrupti, quasi tempora dignissimos ut?Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Quos, corrupti! Welcome
-          to my personal website.
+          I&apos;m a third-year student of Computer Engineering. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Amet cum temporibus
+          fugiat culpa unde vel corrupti, quasi tempora dignissimos ut?Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Quos, corrupti!
+          Welcome to my personal website.
         </p>
       </Section>
       <Section>
@@ -81,6 +70,6 @@ export default function Home({ data }) {
           />
         ))}
       </Section>
-    </Container>
+    </Flex>
   );
 }
