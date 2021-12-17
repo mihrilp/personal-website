@@ -1,52 +1,26 @@
 import Link from "next/link";
-import { Hello, Ufo } from "./icons";
-import styled from "styled-components";
-import { Flex } from "../styles/uielements";
-
-const Nav = styled.nav`
-  padding: 4rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 25%;
-`;
-
-const NavItem = styled.a`
-  text-decoration: none;
-  color: #5b5c63;
-  cursor: pointer;
-  font-size: 1.3rem;
-`;
-
-const MeetButton = styled.a`
-  padding: 4rem 0;
-  text-decoration: none;
-  color: #ffd200;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-`;
+import { Ufo, VulcanSalute } from "./icons";
 
 export default function Navbar() {
   return (
-    <Flex>
-      <Nav>
+    <nav className="navbarContainer">
+      <div className="navbar">
         <Link href="/" passHref>
           <Ufo />
         </Link>
         <Link href="/blog" passHref>
-          <NavItem>Blog</NavItem>
+          <a className="navItem">Blog</a>
         </Link>
         <Link href="/projects" passHref>
-          <NavItem>Projects</NavItem>
+          <a className="navItem">Projects</a>
         </Link>
         <Link href="/about" passHref>
-          <NavItem>About</NavItem>
+          <a className="navItem">About</a>
         </Link>
-      </Nav>
-      <MeetButton href="mailto: mihrilp@gmail.com">
-        Let&apos;s Meet <Hello />
-      </MeetButton>
-    </Flex>
+      </div>
+      <a className="meetBtn" href="mailto: mihrilp@gmail.com">
+        Let&apos;s Meet <VulcanSalute />
+      </a>
+    </nav>
   );
 }

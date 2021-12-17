@@ -1,11 +1,10 @@
 import "../styles/global.scss";
-import Navbar from "../components/navbar";
-import { Layout } from "../styles/uielements";
+import "../styles/navbar.scss";
+import { Layout } from "../components";
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <Navbar />
       <Component {...pageProps} />
     </Layout>
   );
