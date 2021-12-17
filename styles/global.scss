@@ -13,17 +13,23 @@ body {
   font-size: $text-font;
   line-height: 1.5;
   height: 100vh;
-  .title {
-    font-size: $title-font;
-    margin-bottom: 45px;
-    font-weight: bold;
-    color: $turquoise;
-  }
   a {
     text-decoration: none;
   }
   .layout {
     height: 100vh;
-    padding: 2rem 12rem;
+    padding: 2rem 14rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .title {
+    color: $turquoise;
+    margin: 1.5rem 0;
+    font-size: $title-font;
+  }
+  .subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: $yellow;
   }
 }

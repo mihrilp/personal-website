@@ -1,55 +1,31 @@
+import React from "react";
+import Link from "next/link";
 import { Heart, Comment } from "./icons";
-// import { Subtitle } from "../styles/uielements";
 
-// const Wrapper = styled.div`
-//   padding: 25px;
-//   border: 0.5px solid #5b5c63;
-//   cursor: pointer;
-//   border-radius: 15px;
-//   margin-bottom: 40px;
-// `;
+const LatestPost = React.forwardRef(
+  ({ url, title, date, description, reactions, comments }) => {
+    return (
+      <Link href={url} passHref>
+        <div className="latestPost">
+          <h2 className="subtitle">{title}</h2>
+          <p className="date">{date}</p>
+          <p className="description">{description}</p>
+          <div className="reactions">
+            <div>
+              <Heart className="reactionIcon" />
+              <p>{reactions} reactions</p>
+            </div>
+            <div>
+              <Comment className="reactionIcon" />
+              <p>{comments} comments</p>
+            </div>
+          </div>
+        </div>
+      </Link>
+    );
+  }
+);
 
-// const DateText = styled.div`
-//   color: #5b5c63;
-//   margin-bottom: 15px;
-// `;
+LatestPost.displayName = "LatestPost";
 
-// const Text = styled.p`
-//   margin-bottom: 45px;
-// `;
-
-// const Section = styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-around;
-//   align-items: center;
-//   text-align: center;
-//   margin-bottom: 15px;
-//   font-size: 17px;
-// `;
-
-export default function LatestPost({
-  url,
-  title,
-  date,
-  description,
-  reactions,
-  comments,
-}) {
-  return (
-    <h2>sadşasi</h2>
-    // <Wrapper>
-    //   <a href={url}>
-    //     <Subtitle>{title}</Subtitle>
-    //   </a>
-    //   <DateText>{date}</DateText>
-    //   <Text>{description}</Text>
-    //   <Section>
-    //     <Heart />
-    //     {reactions} reactions
-    //     <Comment />
-    //     {comments} comments
-    //   </Section>
-    // </Wrapper>
-  );
-}
+export default LatestPost;

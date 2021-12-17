@@ -2,8 +2,9 @@ import * as React from "react";
 
 const SvgComment = (props) => (
   <svg
-    width={112}
-    height={100}
+    width={27}
+    height={25}
+    viewBox="0 0 112 100"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

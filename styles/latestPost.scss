@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.latestPost {
+    padding: 2rem 0;
+    border: 0.5px solid $gray;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    .date {
+        color: $gray;
+        margin-bottom: 15px;
+    }
+    .description {
+        margin-bottom: 1rem;
+    }
+    .reactions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 17px;
+        div {
+            display: flex;
+            align-items: center;
+            .reactionIcon {
+                margin-right: 10px;
+            }
+        }
+    }
+}
