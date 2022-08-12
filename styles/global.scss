@@ -1,4 +1,11 @@
 @import "./variables.scss";
+@import "./mixins.scss";
+
+@import "./home.scss";
+@import "./bestProject.scss";
+@import "./connect.scss";
+@import "latestPost.scss";
+@import "./navbar.scss";
 
 * {
   margin: 0;
@@ -11,16 +18,14 @@ body {
   color: $text-color;
   font-family: $font-family;
   font-size: $text-font;
-  line-height: 1.5;
+  line-height: 1.7;
   height: 100vh;
   a {
-    text-decoration: none;
+    color: $text-color;
   }
   .layout {
     height: 100vh;
-    padding: 2rem 14rem;
-    text-align: center;
-    line-height: 1.5;
+    padding: 1.5rem 20rem;
   }
   .title {
     color: $turquoise;

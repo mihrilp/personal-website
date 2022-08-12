@@ -1,10 +1,14 @@
 @import "./variables.scss";
 
-.homeContainer {
-    display: flex;
-    flex-direction: column;
-    .welcome {
+.home {
+    @include flex(column);
+    &__content {
+        @include flex(row, space-between, center);
+        text-align: justify;
         margin-bottom: 3rem;
+        &__text {
+            margin-right: 2rem;
+        }
     }
     .seeMoreBtn {
         font-size: 18px;

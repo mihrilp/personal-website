@@ -12,7 +12,7 @@ export default function Navbar() {
           <a className="navItem">Blog</a>
         </Link>
         <Link href="/projects" passHref>
-          <a className="navItem">Projects</a>
+          <a className="navItem">Work</a>
         </Link>
         <Link href="/about" passHref>
           <a className="navItem">About</a>
