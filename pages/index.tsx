@@ -1,3 +1,4 @@
+import { NextPage } from "next";
 import Head from "next/head";
 import { Connect } from "../components";
 import { FemaleDeveloper } from "../components/icons";
@@ -19,7 +20,7 @@ import { FemaleDeveloper } from "../components/icons";
 //   };
 // }
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <div className="home">
       <Head>
@@ -52,4 +53,6 @@ export default function Home() {
       <p>dlşsalş</p>
     </div>
   );
-}
+};
+
+export default Home;
