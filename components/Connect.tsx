@@ -1,9 +1,9 @@
 import React from "react";
 import * as Icons from "./icons";
 
-function Connect(props) {
+function Connect() {
   return (
-    <div className="connect">
+    <div className="flex items-center justify-start my-10 w-full">
       <Icons.Linkedin />
       <Icons.Github />
       <Icons.Twitter />
