@@ -25,7 +25,8 @@ export default function Home() {
       <Head>
         <title>Mihriban Alp</title>
       </Head>
-      <div className="home__content">
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      {/* <div className="home__content">
         <div className="home__content__text">
           <h2> Hey there, I&apos;m Mihriban.</h2>
           <p>
@@ -47,7 +48,8 @@ export default function Home() {
         <div>
           <FemaleDeveloper />
         </div>
-      </div>
+      </div> */}
+      <p>dlşsalş</p>
     </div>
   );
 }
