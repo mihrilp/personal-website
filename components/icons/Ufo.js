@@ -3,8 +3,8 @@ import * as React from "react";
 const SvgUfo = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={55}
-    height={55}
+    width={50}
+    height={50}
     fill="#ffd200"
     viewBox="0 0 128 128"
     {...props}

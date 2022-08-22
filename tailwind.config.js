@@ -8,14 +8,14 @@ module.exports = {
   theme: {
     colors: {
       'dark-blue': "#0f141a",
-      'yellow': '#ffd200',
-      'gray': '#5b5c63'
     },
     fontFamily: {
       'roboto': ['Roboto Mono', 'sans-serif'],
     },
     textColor: {
       'primary': '#ebebec',
+      'yellow': '#ffd200',
+      'gray': '#5b5c63'
     }
   },
   plugins: [],

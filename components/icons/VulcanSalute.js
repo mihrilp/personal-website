@@ -4,8 +4,8 @@ const SvgVulcanSalute = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 125"
-    height={35}
-    width={35}
+    height={50}
+    width={43}
     fill="#ffd200"
     {...props}
   >
