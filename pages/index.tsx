@@ -26,13 +26,14 @@ const Home: NextPage = () => {
       <Head>
         <title>Mihriban Alp</title>
       </Head>
-      <div className="mr-32 text-justify">
-        <p className="mb-5"> Hey there, my name is:</p>
-        <h2 className="font-bold text-6xl mb-5">
-          Mihriban Alp. <br /> I&apos;m a Software Developer.
+      <div className="text-justify">
+        <p className="mb-3 text-lg font-light"> Hey there, my name is:</p>
+        <h2 className="font-bold text-5xl mb-3 font-roboto text-opacity-70 text-yellow">
+          Mihriban Alp. 
         </h2>
-        <p className="mb-5">
-          Currently I&apos;m working at
+        <h2 className="font-bold text-5xl mb-5 font-roboto">I&apos;m a Software Developer.</h2>
+        <p className="mb-5 text-lg font-light leading-7">
+          Currently I&apos;m working at 
           <a href="https://www.appcent.mobi/" target="_blank">
             Appcent
           </a>
