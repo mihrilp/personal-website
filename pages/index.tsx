@@ -27,13 +27,15 @@ const Home: NextPage = () => {
         <title>Mihriban Alp</title>
       </Head>
       <div className="text-justify">
-        <p className="mb-3 text-lg font-light"> Hey there, my name is:</p>
-        <h2 className="font-bold text-5xl mb-3 font-roboto text-opacity-70 text-yellow">
-          Mihriban Alp. 
+        <p className="mb-5 text-lg font-light"> Hey there, my name is:</p>
+        <h2 className="font-bold text-5xl mb-3 font-roboto text-blue">
+          Mihriban Alp.
         </h2>
-        <h2 className="font-bold text-5xl mb-5 font-roboto">I&apos;m a Software Developer.</h2>
+        <h2 className="font-bold text-5xl mb-7 font-roboto">
+          I&apos;m a Software Developer.
+        </h2>
         <p className="mb-5 text-lg font-light leading-7">
-          Currently I&apos;m working at 
+          Currently I&apos;m working at
           <a href="https://www.appcent.mobi/" target="_blank">
             Appcent
           </a>
@@ -46,7 +48,7 @@ const Home: NextPage = () => {
           labore, sed, ad dolorum sapiente iusto deleniti impedit iste quaerat
           vel modi.
         </p>
-        <Connect className="home_context_social" />
+        <Connect />
       </div>
     </div>
   );

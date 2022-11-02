@@ -3,12 +3,25 @@ import * as Icons from "./icons";
 
 function Connect() {
   return (
-    <div className="flex items-center justify-start my-10 w-full">
-      <Icons.Linkedin />
-      <Icons.Github />
-      <Icons.Twitter />
-      <Icons.Devto />
-      <Icons.Spotify />
+    <div className="flex items-center justify-between my-20 w-1/4">
+      <a href="https://github.com/mihrilp" target="blank">
+        <Icons.Github />
+      </a>
+      <a href="https://www.linkedin.com/in/mihribanalp/" target="blank">
+        <Icons.Linkedin />
+      </a>
+      <a href="https://twitter.com/mihriinspace" target="blank">
+        <Icons.Twitter />
+      </a>
+      <a href="https://dev.to/mihrilp" target="blank">
+        <Icons.Devto />
+      </a>
+      <a
+        href="https://open.spotify.com/user/cl13omk222r2v8e3l70oxn6q8"
+        target="blank"
+      >
+        <Icons.Spotify />
+      </a>
     </div>
   );
 }
