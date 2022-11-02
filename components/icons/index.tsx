@@ -1,6 +1,6 @@
+export { default as Comment } from "./Comment";
 export { default as Alien } from "./Alien";
 export { default as Click } from "./Click";
-export { default as Comment } from "./Comment";
 export { default as Devto } from "./Devto";
 export { default as Discord } from "./Discord";
 export { default as FemaleDeveloper } from "./FemaleDeveloper";

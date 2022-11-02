@@ -1,6 +1,7 @@
 import * as React from "react";
+import { SVGProps } from "react";
 
-const SvgGithub2 = (props) => (
+const SvgGithub2 = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={93}
     height={25}

@@ -1,6 +1,7 @@
 import * as React from "react";
+import { SVGProps } from "react";
 
-const SvgTelegram = (props) => (
+const SvgTelegram = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={49}
     height={40}
