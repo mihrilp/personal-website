@@ -4,8 +4,6 @@ import { SVGProps } from "react";
 const SvgUfo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={50}
-    height={50}
     fill="#ffd200"
     viewBox="0 0 128 128"
     {...props}

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "svgr": "svgr public/icons -d components/icons --typescript"
+    "svgr": "svgr public/icons -d components/icons --typescript --no-dimensions"
   },
   "dependencies": {
     "@types/node": "^18.7.9",

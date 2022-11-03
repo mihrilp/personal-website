@@ -4,8 +4,6 @@ import { SVGProps } from "react";
 const SvgAlien = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={35}
-    height={35}
     viewBox="0 0 512.002 512.002"
     {...props}
   >

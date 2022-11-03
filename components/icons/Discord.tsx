@@ -3,8 +3,7 @@ import { SVGProps } from "react";
 
 const SvgDiscord = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    width={38}
-    height={40}
+    viewBox="0 0 38 40"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

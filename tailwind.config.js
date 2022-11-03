@@ -7,7 +7,8 @@ module.exports = {
   darkMode: true,
   theme: {
     colors: {
-      'dark-blue': "#0f141a",
+      'dark-gray': "#0f141a",
+      'gray': '#253241'
     },
     fontFamily: {
       'roboto': ['Roboto Mono', 'sans-serif'],

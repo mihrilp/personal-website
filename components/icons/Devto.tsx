@@ -3,8 +3,7 @@ import { SVGProps } from "react";
 
 const SvgDevto = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    width={47}
-    height={30}
+    viewBox="0 0 47 30"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
