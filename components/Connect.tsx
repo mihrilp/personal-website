@@ -3,7 +3,7 @@ import * as Icons from "./icons";
 
 function Connect() {
   return (
-    <div className="flex items-center justify-between my-20 w-1/4">
+    <div className="flex items-center justify-between my-10 w-1/4">
       <a href="https://github.com/mihrilp" target="blank">
         <Icons.Github />
       </a>
