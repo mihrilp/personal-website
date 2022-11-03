@@ -8,7 +8,7 @@ type Props = {
 const NavItem = ({ href, pageName }: Props) => {
   return (
     <Link href={href} passHref>
-      <a className="no-underline text-gray cursor-pointer text-lg ml-2">
+      <a className="no-underline text-gray cursor-pointer text-lg ml-4">
         {pageName}
       </a>
     </Link>
