@@ -25,7 +25,7 @@ export default function Navbar() {
     <nav className="flex items-center justify-between py-16 font-roboto">
       <div className="basis-3/4 flex items-center justify-start">
         <Link href="/" passHref>
-          <Ufo />
+          <Ufo width={50} />
         </Link>
         {navbarItems.map((item) => (
           <NavItem key={item.id} href={item.url} pageName={item.name} />
@@ -35,7 +35,7 @@ export default function Navbar() {
         className="basis-1/4 flex items-center justify-end text-gray text-lg py-2"
         href="mailto: mihrilp@gmail.com"
       >
-        Let&apos;s Meet <VulcanSalute />
+        Let&apos;s Meet <VulcanSalute width={50} />
       </a>
     </nav>
   );

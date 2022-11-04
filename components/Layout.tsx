@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 function Layout({ children }) {
   return (
-    <div className="bg-dark-gray h-screen px-80 box-border text-primary">
+    <div className="h-screen box-border w-4/6 text-primary">
       <Navbar />
       {children}
     </div>
