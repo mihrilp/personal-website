@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Mihriban Alp</title>
       </Head>
-      <div className="flex flex-col justify-around">
+      <div className="flex flex-col justify-between h-5/6">
         <div className="flex flex-row items-center space-x-8">
           <div className="text-justify flex-2">
             <p className="mb-5 text-lg font-light"> Hey there, my name is:</p>
