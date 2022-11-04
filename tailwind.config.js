@@ -14,7 +14,7 @@ module.exports = {
       'roboto': ['Roboto Mono', 'sans-serif'],
     },
     textColor: {
-      'primary': '#ebebec',
+      'white': '#ebebec',
       'yellow': '#ffd200',
       'gray': '#5b5c63',
       'blue': '#26C6DA'
