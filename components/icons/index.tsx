@@ -14,3 +14,4 @@ export { default as Telegram } from "./Telegram";
 export { default as Twitter } from "./Twitter";
 export { default as Ufo } from "./Ufo";
 export { default as VulcanSalute } from "./VulcanSalute";
+export { default as Time } from "./Time";

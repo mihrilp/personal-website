@@ -6,7 +6,7 @@ function Blog() {
       <div className="divide-y divide-[#5b5c63] divide-opacity-50">
         <Post
           title="How to use SVGR?"
-          date="2021-09-01"
+          date="October 1, 2021"
           content="Hey Everyone, this is my first post and i'll mention about SVGR. If you've never heard of it before, SVGR is an amazing tool that converts your SVGs into React components.There are a few ways for using SVGR:here are a few ways for using SVGR:here are a few ways for using SVGR:here are a few ways for using SVGR:"
         />
         <Post
