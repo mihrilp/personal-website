@@ -1,6 +1,6 @@
 import { Project, SeeMoreButton } from "../components";
 
-export default function Projects() {
+function Projects() {
   return (
     <div className="flex flex-col justify-between items-center h-5/6">
       <div className="flex space-x-6">
@@ -18,3 +18,5 @@ export default function Projects() {
     </div>
   );
 }
+
+export default Projects;
