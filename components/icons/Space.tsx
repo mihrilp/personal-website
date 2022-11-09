@@ -3,8 +3,6 @@ import { SVGProps } from "react";
 
 const SvgSpace = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    width={343}
-    height={230}
     viewBox="0 0 331 250"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

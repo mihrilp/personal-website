@@ -1,5 +1,5 @@
 export { default as Comment } from "./Comment";
-export { default as Alien } from "./Alien";
+export { default as BlackHole } from "./BlackHole";
 export { default as Click } from "./Click";
 export { default as Devto } from "./Devto";
 export { default as Discord } from "./Discord";
@@ -11,7 +11,7 @@ export { default as Space } from "./Space";
 export { default as Spotify } from "./Spotify";
 export { default as Star } from "./Star";
 export { default as Telegram } from "./Telegram";
+export { default as Time } from "./Time";
 export { default as Twitter } from "./Twitter";
 export { default as Ufo } from "./Ufo";
 export { default as VulcanSalute } from "./VulcanSalute";
-export { default as Time } from "./Time";

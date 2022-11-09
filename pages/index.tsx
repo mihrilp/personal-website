@@ -46,7 +46,7 @@ const Home: NextPage = () => {
             </p>
           </div>
           <div className="flex-1">
-            <Space />
+            <Space width={340} />
           </div>
         </div>
         <Connect />
