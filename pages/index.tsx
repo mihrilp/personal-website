@@ -1,6 +1,5 @@
 import { NextPage } from "next";
-import Head from "next/head";
-import { Connect } from "../components";
+import { Connect, Layout } from "../components";
 import { Space } from "../components/icons";
 
 // export async function getStaticProps() {
@@ -22,11 +21,8 @@ import { Space } from "../components/icons";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col justify-center">
-      <Head>
-        <title>Mihriban Alp</title>
-      </Head>
-      <div className="flex flex-col justify-between h-5/6">
+    <Layout title="Mihriban Alp">
+      <div className="flex flex-col justify-center">
         <div className="flex flex-row items-center space-x-8">
           <div className="text-justify flex-2">
             <p className="mb-5 text-lg font-light"> Hey there, my name is:</p>
@@ -55,7 +51,7 @@ const Home: NextPage = () => {
         </div>
         <Connect />
       </div>
-    </div>
+    </Layout>
   );
 };
 
