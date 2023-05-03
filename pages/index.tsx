@@ -25,15 +25,15 @@ const Home: NextPage = () => {
       <div className="flex flex-col justify-center">
         <div className="flex flex-row items-center space-x-8">
           <div className="text-justify flex-2">
-            <p className="mb-5 text-lg font-light"> Hey there, my name is:</p>
+            <p className="mb-5 text-lg font-light"> Hello, I&apos;m:</p>
             <h2 className="font-bold text-5xl mb-3 font-roboto text-blue">
-              Mihriban Alp.
+              Mihriban Alp
             </h2>
             <h2 className="font-bold text-4xl mb-7 font-roboto">
-              I&apos;m a Software Engineer.
+              a Software Engineer.
             </h2>
-            <p className="mb-5 text-lg font-light leading-7 ">
-              Currently I&apos;m working at
+            <p className="text-lg font-light leading-7 ">
+              I&apos;m currently working at{" "}
               <a
                 href="https://www.appcent.mobi/"
                 target="_blank"
@@ -41,12 +41,12 @@ const Home: NextPage = () => {
               >
                 Appcent
               </a>
-              . I&apos;m also developing mobile apps with React Native in{" "}
-              <a href="https://papyonlab.com/" target="_blank" rel="noreferrer">
-                PapyonLab
-              </a>
-              . Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
-              obcaecati aspernatur necessitatibus vitae ea a nobis non, numquam.
+              , where I collaborate with a team of talented engineers to develop
+              cutting-edge software solutions for a diverse range of industries.
+              I&apos;m passionate about all things software and dedicated to
+              creating innovative solutions through programming and development.
+              Thank you for visiting my website, and I look forward to sharing
+              my knowledge and experience with you!
             </p>
           </div>
           <div className="flex-1">

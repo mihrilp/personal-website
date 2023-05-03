@@ -3,7 +3,7 @@ import { Layout, Post } from "../components";
 function Blog() {
   return (
     <Layout title="Blog">
-      <div className="flex flex-col justify-between items-center h-full">
+      <div className="flex flex-col justify-between items-center">
         <div className="flex flex-col divide-y divide-[#5b5c63] divide-opacity-50">
           <Post
             title="How to use SVGR?"

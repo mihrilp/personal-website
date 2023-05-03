@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { Layout } from "../components";
 import BlackHole from "../components/icons/BlackHole";
 
 function Custom404() {
@@ -13,7 +12,7 @@ function Custom404() {
         This page may have been swallowed by a black hole.
       </p>
       <p className="text-xl mb-7 text-white">
-        But don't worry you are safe!{" "}
+        But don&apos;t worry you are safe!{" "}
         <Link href="/">
           <a className="text-yellow">Go back home</a>
         </Link>{" "}
