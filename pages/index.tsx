@@ -34,11 +34,15 @@ const Home: NextPage = () => {
             </h2>
             <p className="mb-5 text-lg font-light leading-7 ">
               Currently I&apos;m working at
-              <a href="https://www.appcent.mobi/" target="_blank">
+              <a
+                href="https://www.appcent.mobi/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Appcent
               </a>
               . I&apos;m also developing mobile apps with React Native in{" "}
-              <a href="https://papyonlab.com/" target="_blank">
+              <a href="https://papyonlab.com/" target="_blank" rel="noreferrer">
                 PapyonLab
               </a>
               . Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
