@@ -23,27 +23,28 @@ const Home: NextPage = () => {
   return (
     <Layout title="Mihriban Alp">
       <div className="flex flex-col justify-center">
-        <div className="flex flex-row items-center space-x-8">
-          <div className="text-justify flex-2">
-            <p className="mb-5 text-lg font-light"> Hello, I&apos;m:</p>
-            <h2 className="font-bold text-5xl mb-3 font-roboto text-blue">
-              Mihriban Alp
+        <div className="flex flex-row items-center">
+          <div className="text-left flex-2">
+            <p className="mb-5 text-lg font-light text-lightgray">
+              Hello, I&apos;m:
+            </p>
+            <h2 className="font-bold text-4xl mb-3 font-roboto text-orange">
+              Mihriban Alp,
             </h2>
-            <h2 className="font-bold text-4xl mb-7 font-roboto">
-              a Software Engineer.
+            <h2 className="font-bold text-3xl mb-7 font-roboto">
+              a Software Engineer
             </h2>
-            <p className="text-lg font-light leading-7 ">
-              I&apos;m currently working at{" "}
+            <p className="text-lg font-light text-lightgray leading-8 ">
+              currently working at{" "}
               <a
+                className="underline"
                 href="https://www.appcent.mobi/"
                 target="_blank"
                 rel="noreferrer"
               >
                 Appcent
               </a>
-              , where I collaborate with a team of talented engineers to develop
-              cutting-edge software solutions for a diverse range of industries.
-              I&apos;m passionate about all things software and dedicated to
+              . I&apos;m passionate about all things software and dedicated to
               creating innovative solutions through programming and development.
               Thank you for visiting my website, and I look forward to sharing
               my knowledge and experience with you!

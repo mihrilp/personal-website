@@ -7,7 +7,7 @@ module.exports = {
   darkMode: true,
   theme: {
     colors: {
-      "dark-gray": "#0f141a",
+      darkblue: "#0f141a",
       gray: "#253241",
     },
     fontFamily: {
@@ -15,14 +15,12 @@ module.exports = {
     },
     textColor: {
       white: "#f8f9fa",
-      light: "#ced4da",
-      yellow: "#ffd200",
       gray: "#5b5c63",
-      blue: "#26C6da",
-      //for social icons
-      linkedin: "#0b65c2",
-      twitter: "#1d93e3",
-      spotify: "#1bcc5a",
+      lightgray: "#ced4da",
+      yellow: "#ffd200",
+      blue: "#00bfff",
+      orange: "#FFC8B4",
+      green: "#98ff98",
     },
   },
   plugins: [],

@@ -10,14 +10,14 @@ type Props = {
 function Post({ title, date, content }: Props) {
   return (
     <a className="group flex-1 flex flex-col justify-between cursor-pointer py-7 first-of-type:pt-0">
-      <h2 className="text-2xl font-semibold font-roboto group-hover:text-blue mb-3">
+      <h2 className="text-2xl font-semibold font-roboto group-hover:text-orange mb-3">
         {title}
       </h2>
       <div className="flex flex-row items-center space-x-1 mb-2">
         <Time height={20} />
         <p className="text-gray">{date}</p>
       </div>
-      <p className="text-justify text-m text-light leading-6">{content}</p>
+      <p className="text-justify text-m text-lightgray leading-6">{content}</p>
     </a>
   );
 }

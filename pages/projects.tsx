@@ -15,7 +15,6 @@ function Projects() {
           />
           <Project name="filmophile.svg" description="lorem2lfkslfk" />
         </div>
-        <SeeMoreButton link="https://github.com/mihrilp?tab=repositories" />
       </div>
     </Layout>
   );
