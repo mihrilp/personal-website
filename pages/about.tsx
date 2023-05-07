@@ -1,27 +1,22 @@
 import { Layout } from "../components";
 import Experience from "../components/Experience";
+import experiences from "../constants/experiences";
 
 function About() {
   return (
     <Layout title="About">
-      <h2 className="text-2xl font-semibold font-roboto group-hover:text-orange mb-7">
-        Experience
-      </h2>
-      <div>
-        <Experience
-          title="Frontend Developer"
-          company="Appcent"
-          positions={[
-            { time: "Dec 2021 - Feb 2022", jobType: "Internship" },
-            { time: "Mar 2022 - May 2022", jobType: "Part-time" },
-            { time: "Jun 2022 - Present", jobType: "Full-time" },
-          ]}
-        />
-        <Experience
-          title="React Native Developer"
-          company="Papyon LAB"
-          positions={[{ time: "Nov 2021 - Feb 2023", jobType: "Freelance" }]}
-        />
+      <div className="h-3/4">
+        <h2 className="text-2xl font-semibold font-roboto group-hover:text-orange mb-5">
+          Experience
+        </h2>
+        <div>
+          {experiences.map((experience) => (
+            <Experience key={experience.id} {...experience} />
+          ))}
+        </div>
+        <h2 className="text-2xl font-semibold font-roboto group-hover:text-orange mb-5 mt-12">
+          Skills
+        </h2>
       </div>
     </Layout>
   );

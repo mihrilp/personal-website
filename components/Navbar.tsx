@@ -22,7 +22,7 @@ const navbarItems = [
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between py-16 font-roboto w-full">
+    <nav className="flex items-center justify-between h-1/4 font-roboto w-full">
       <div className="basis-3/4 flex items-center justify-start">
         <Link href="/" passHref>
           <a>

@@ -22,7 +22,7 @@ import { Space } from "../components/icons";
 const Home: NextPage = () => {
   return (
     <Layout title="Mihriban Alp">
-      <div className="flex flex-col justify-center">
+      <div className="h-3/4 flex flex-col justify-between ">
         <div className="flex flex-row items-center">
           <div className="text-left flex-2">
             <p className="mb-5 text-lg font-light text-lightgray">

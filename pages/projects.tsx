@@ -3,7 +3,7 @@ import { Layout, Project, SeeMoreButton } from "../components";
 function Projects() {
   return (
     <Layout title="Projects">
-      <div className="flex flex-col justify-between items-center">
+      <div className="h-3/4 flex flex-col justify-between items-center">
         <div className="flex space-x-6">
           <Project
             name="Filmophile"
