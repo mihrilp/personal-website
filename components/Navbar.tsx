@@ -37,7 +37,7 @@ export default function Navbar() {
         className="basis-1/4 flex items-center justify-end text-lg font-thin"
         href="mailto: mihrilp@gmail.com"
       >
-        Let&apos;s Meet <VulcanSalute height={43} className="pl-4" />
+        Let&apos;s Meet <VulcanSalute height={40} className="pl-4" />
       </a>
     </nav>
   );

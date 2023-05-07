@@ -22,6 +22,9 @@ module.exports = {
       orange: "#FFC8B4",
       green: "#98ff98",
     },
+    borderColor: {
+      orange: "#FFC8B4",
+    },
   },
   plugins: [],
 };
