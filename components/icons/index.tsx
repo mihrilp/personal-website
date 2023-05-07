@@ -1,17 +1,7 @@
-export { default as Comment } from "./Comment";
 export { default as BlackHole } from "./BlackHole";
 export { default as Click } from "./Click";
-export { default as Devto } from "./Devto";
-export { default as Discord } from "./Discord";
 export { default as ExternalLink } from "./ExternalLink";
-export { default as Github } from "./Github";
-export { default as Heart } from "./Heart";
-export { default as Linkedin } from "./Linkedin";
 export { default as Space } from "./Space";
-export { default as Spotify } from "./Spotify";
-export { default as Star } from "./Star";
-export { default as Telegram } from "./Telegram";
 export { default as Time } from "./Time";
-export { default as Twitter } from "./Twitter";
 export { default as Ufo } from "./Ufo";
 export { default as VulcanSalute } from "./VulcanSalute";

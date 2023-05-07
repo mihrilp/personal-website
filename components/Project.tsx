@@ -1,5 +1,6 @@
 import React from "react";
-import { Github, ExternalLink } from "./icons";
+import { ExternalLink } from "./icons";
+import { Github } from "./icons/social";
 
 type Props = {
   name: string;

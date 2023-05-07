@@ -1,5 +1,5 @@
 import React from "react";
-import * as Icons from "./icons";
+import * as Icons from "./icons/social";
 
 function Connect() {
   return (
