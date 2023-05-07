@@ -1,24 +1,7 @@
 import { Ufo, VulcanSalute } from "./icons";
 import Link from "next/link";
 import NavItem from "./NavItem";
-
-const navbarItems = [
-  {
-    id: 1,
-    name: "Blog",
-    url: "/blog",
-  },
-  {
-    id: 2,
-    name: "Projects",
-    url: "/projects",
-  },
-  {
-    id: 3,
-    name: "About",
-    url: "/about",
-  },
-];
+import navbarItems from "../constants/navbarItems";
 
 export default function Navbar() {
   return (

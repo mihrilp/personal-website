@@ -13,8 +13,8 @@ function Experience({ title, company, positions }: Props) {
   return (
     <div className="mb-7">
       <div className="relative mb-2">
-        <div className="absolute w-2 h-2 rounded-full top-1/2 transform -translate-y-1/2 border border-orange"></div>
-        <p className="text-lg text-orange ml-4">
+        <div className="absolute w-2 h-2 rounded-full top-1/2 transform -translate-y-1/2 border border-purple"></div>
+        <p className="text-lg text-white ml-4">
           {title} - {company}
         </p>
       </div>

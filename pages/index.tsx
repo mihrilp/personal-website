@@ -28,7 +28,7 @@ const Home: NextPage = () => {
             <p className="mb-5 text-lg font-light text-lightgray">
               Hello, I&apos;m:
             </p>
-            <h2 className="font-bold text-4xl mb-3 font-roboto text-orange">
+            <h2 className="font-bold text-4xl mb-3 font-roboto text-purple">
               Mihriban Alp,
             </h2>
             <h2 className="font-bold text-3xl mb-7 font-roboto">
