@@ -22,24 +22,29 @@ const skills = [
     icon: <Icons.React height={23} />,
   },
   {
-    id: 7,
+    id: 5,
     name: "Git",
     icon: <Icons.Git height={23} />,
   },
   {
-    id: 9,
-    name: "GraphQL",
-    icon: <Icons.Graphql height={23} />,
+    id: 6,
+    name: "VS Code",
+    icon: <Icons.VsCode height={23} />,
   },
   {
-    id: 5,
+    id: 7,
     name: "HTML",
     icon: <Icons.Html height={23} />,
   },
   {
-    id: 6,
+    id: 8,
     name: "CSS",
     icon: <Icons.Css height={23} />,
+  },
+  {
+    id: 9,
+    name: "Sass",
+    icon: <Icons.Sass height={23} />,
   },
   {
     id: 10,
@@ -47,19 +52,12 @@ const skills = [
     icon: <Icons.Tailwind height={23} />,
   },
   {
-    id: 12,
-    name: "VS Code",
-    icon: <Icons.VisualStudioCode height={23} />,
-  },
-
-  {
-    id: 8,
-    name: "Sass",
-    icon: <Icons.Sass height={23} />,
-  },
-
-  {
     id: 11,
+    name: "GraphQL",
+    icon: <Icons.Graphql height={23} />,
+  },
+  {
+    id: 12,
     name: "Bootstrap",
     icon: <Icons.Bootstrap height={23} />,
   },

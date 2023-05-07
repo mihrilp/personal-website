@@ -9,4 +9,4 @@ export { default as Redux } from "./Redux";
 export { default as Sass } from "./Sass";
 export { default as Tailwind } from "./Tailwind";
 export { default as Typescript } from "./Typescript";
-export { default as VisualStudioCode } from "./VisualStudioCode";
+export { default as VsCode } from "./VsCode";

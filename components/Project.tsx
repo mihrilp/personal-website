@@ -16,7 +16,7 @@ function Project({ name, description, githubLink, liveLink }: Props) {
       href={liveLink}
     >
       <div className="flex flex-col justify-cente items-center space-y-4">
-        <h2 className="text-xl font-semibold font-roboto group-hover:text-orange">
+        <h2 className="text-xl font-semibold font-roboto group-hover:text-purple">
           {name}
         </h2>
         <p className="text-justify text-sm text-lightgray leading-6">
