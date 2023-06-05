@@ -1,4 +1,5 @@
 export { default as BlackHole } from "./BlackHole";
+export { default as Clap } from "./Clap";
 export { default as Click } from "./Click";
 export { default as ExternalLink } from "./ExternalLink";
 export { default as Space } from "./Space";
