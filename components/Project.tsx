@@ -12,7 +12,7 @@ type Props = {
 function Project({ name, description, githubLink, liveLink }: Props) {
   return (
     <a
-      className="group bg-gray flex-1 flex flex-col justify-between rounded p-4 cursor-pointer"
+      className="group border border-gray border-opacity-80 flex-1 flex flex-col justify-between rounded-md p-4 cursor-pointer"
       href={liveLink}
     >
       <div className="flex flex-col justify-cente items-center space-y-4">
@@ -24,11 +24,11 @@ function Project({ name, description, githubLink, liveLink }: Props) {
         </p>
       </div>
       <div className="flex flex-row justify-center w-full mt-4 space-x-3">
-        <a href={githubLink}>
-          <Github height={20} color="#f8f9fa" />
+        <a className="text-lightgray hover:text-white" href={githubLink}>
+          <Github height={20} />
         </a>
-        <a href={liveLink}>
-          <ExternalLink height={20} color="#f8f9fa" />
+        <a className="text-lightgray  hover:text-white" href={liveLink}>
+          <ExternalLink height={20} />
         </a>
       </div>
     </a>

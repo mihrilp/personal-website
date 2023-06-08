@@ -16,7 +16,7 @@ module.exports = {
     textColor: {
       white: "#f8f9fa",
       gray: "#5b5c63",
-      lightgray: "#ced4da",
+      lightgray: "#adb5bd",
       yellow: "#ffd200",
       blue: "#00bfff",
       orange: "#FFC8B4",
