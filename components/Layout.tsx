@@ -18,7 +18,7 @@ function Layout({ title, description, keywords, children }: Props) {
         <meta name="keywords" content={keywords} />
         <link rel="icon" href="./favicon.ico" />
       </Head>
-      <div className="w-4/6 text-white h-full">
+      <div className="w-5/6 lg:w-4/6 text-white h-full">
         <Navbar />
         {children}
       </div>

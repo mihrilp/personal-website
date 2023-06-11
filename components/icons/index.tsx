@@ -1,8 +1,11 @@
 export { default as BlackHole } from "./BlackHole";
 export { default as Clap } from "./Clap";
 export { default as Click } from "./Click";
+export { default as Cross } from "./Cross";
 export { default as ExternalLink } from "./ExternalLink";
 export { default as Space } from "./Space";
+export { default as Spaceship } from "./Spaceship";
+export { default as Telescope } from "./Telescope";
 export { default as Time } from "./Time";
 export { default as Ufo } from "./Ufo";
 export { default as VulcanSalute } from "./VulcanSalute";
