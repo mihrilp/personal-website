@@ -11,7 +11,7 @@ type Props = {
 
 function Layout({ title, description, keywords, children }: Props) {
   return (
-    <div className="box-border flex flex-col items-center h-screen bg-darkblue">
+    <div className="box-border flex flex-col items-center h-screen bg-darkblue overflow-auto">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />

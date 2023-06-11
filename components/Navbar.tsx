@@ -7,7 +7,7 @@ import navbarItems from "../constants/navbarItems";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="flex items-center justify-between h-1/4 font-roboto w-full relative">
+    <nav className="flex items-center justify-between h-1/5 md:h-1/4 font-roboto w-full">
       <div className="lg:basis-3/4 flex items-center justify-start">
         <Link href="/" passHref>
           <Ufo className="mr-4" height={50} />
@@ -36,7 +36,7 @@ export default function Navbar() {
             : "hidden"
         }`}
       >
-        <button className="absolute right-0" onClick={() => setMenuOpen(false)}>
+        <button className="absolute right-5" onClick={() => setMenuOpen(false)}>
           <Cross height={40} />
         </button>
         <div className="flex flex-col items-center gap-4 mt-20">

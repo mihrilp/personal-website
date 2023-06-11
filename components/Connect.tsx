@@ -3,7 +3,7 @@ import * as Icons from "./icons/social";
 
 function Connect() {
   return (
-    <div className="flex items-center justify-between mb-28 w-1/5">
+    <div className="flex items-center gap-3">
       <a
         className="text-lightgray hover:text-white"
         href="https://github.com/mihrilp"
