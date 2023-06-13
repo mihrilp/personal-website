@@ -21,7 +21,7 @@ export default function Navbar() {
         </div>
       </div>
       <a
-        className="hidden md:flex lg:basis-1/4 items-center justify-end text-md md:text-lg font-thin"
+        className="hidden md:flex lg:basis-1/4 items-center justify-end text-lg font-thin"
         href="mailto: mihrilp@gmail.com"
       >
         Let&apos;s Meet <VulcanSalute height={40} className="pl-4" />

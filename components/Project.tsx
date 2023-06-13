@@ -1,6 +1,7 @@
 import React from "react";
 import { ExternalLink } from "./icons";
 import { Github } from "./icons/social";
+import Title from "./Title";
 
 type Props = {
   name: string;
@@ -11,14 +12,9 @@ type Props = {
 
 function Project({ name, description, githubLink, liveLink }: Props) {
   return (
-    <a
-      className="group border border-gray border-opacity-80 flex-1 flex flex-col justify-between rounded-md p-4 cursor-pointer"
-      href={liveLink}
-    >
+    <div className="group border border-gray border-opacity-80 flex-1 flex flex-col justify-between rounded-md p-6 h-1/3 ">
       <div className="flex flex-col justify-cente items-center space-y-4">
-        <h2 className="text-xl font-semibold font-mono group-hover:text-purple">
-          {name}
-        </h2>
+        <Title text={name} />
         <p className="text-justify text-sm text-lightgray leading-6">
           {description}
         </p>
@@ -31,7 +27,7 @@ function Project({ name, description, githubLink, liveLink }: Props) {
           <ExternalLink height={20} />
         </a>
       </div>
-    </a>
+    </div>
   );
 }
 

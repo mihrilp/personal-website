@@ -4,7 +4,7 @@ import skills from "@/constants/skills";
 
 function About() {
   return (
-    <div className="h-3/4">
+    <div>
       <Title text="Experience" />
       <div className="mb-12">
         {experiences.map((experience) => (

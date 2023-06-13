@@ -25,6 +25,7 @@ module.exports = {
     },
     borderColor: {
       gray: "#343a40",
+      purple: "#b892ff",
     },
   },
   plugins: [],

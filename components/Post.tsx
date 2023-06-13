@@ -1,5 +1,6 @@
 import React from "react";
 import { Clap, Time } from "./icons";
+import Title from "./Title";
 
 type Props = {
   title: string;
@@ -11,10 +12,8 @@ type Props = {
 function Post({ title, date, description, reactionsCount }: Props) {
   return (
     <a className="group flex-1 flex flex-col justify-between cursor-pointer py-7 first-of-type:pt-0">
-      <h2 className="text-xl font-semibold font-mono group-hover:text-purple mb-3">
-        {title}
-      </h2>
-      <div className="flex flex-row items-center space-x-6 mb-2">
+      <Title text={title} />
+      <div className="flex flex-row items-center space-x-6 mb-4">
         <div className="flex flex-row items-center space-x-1">
           <Time height={16} />
           <p className="text-gray">{date}</p>
