@@ -14,7 +14,7 @@ function Experience({ title, company, positions }: Props) {
     <div className="mb-7">
       <div className="relative mb-2">
         <div className="absolute w-2 h-2 rounded-full top-1/2 transform -translate-y-1/2 border border-purple"></div>
-        <p className="text-base ml-4 font-light">
+        <p className="ml-4 font-light">
           {title} - {company}
         </p>
       </div>

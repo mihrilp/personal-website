@@ -23,9 +23,7 @@ function Post({ title, date, description, reactionsCount }: Props) {
           <p className="text-gray">{reactionsCount} Reactions</p>
         </div>
       </div>
-      <p className="text-justify text-m text-lightgray leading-6">
-        {description}
-      </p>
+      <p className="text-justify text-lightgray leading-6">{description}</p>
     </a>
   );
 }

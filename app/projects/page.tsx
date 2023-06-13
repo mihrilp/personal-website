@@ -1,17 +1,14 @@
 import { Project } from "@/components";
+import { projects } from "@/constants/projects";
 
 function Projects() {
   return (
-    <div className="flex flex-row justify-between items-start space-x-6 h-full">
-      <Project
-        name="Filmophile"
-        description="Filmophile is a movie app. It uses the TMDB API to fetch movies and TV shows. It also uses the OMDB API to fetch movie details. It is built with Next.js, Tailwind CSS, and TypeScript."
-      />
-      <Project
-        name="Filmophile"
-        description="lorem2lfkslfk It is built with Next.js, Tailwind CSS, and TypeScript"
-      />
-      {/* <Project name="filmophile.svg" description="lorem2lfkslfk" /> */}
+    <div className="flex flex-row justify-between items-start">
+      <div className="flex flex-wrap space-x-4">
+        {projects.map((project) => (
+          <Project key={project.id} {...project} />
+        ))}
+      </div>
     </div>
   );
 }
