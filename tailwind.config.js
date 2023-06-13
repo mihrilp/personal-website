@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: true,
   theme: {
@@ -11,7 +11,7 @@ module.exports = {
       gray: "#253241",
     },
     fontFamily: {
-      roboto: ["Roboto Mono", "sans-serif"],
+      mono: ["var(--font-roboto-mono)"],
     },
     textColor: {
       white: "#f8f9fa",

@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { Cross, Space, Spaceship, Telescope, Ufo, VulcanSalute } from "./icons";
 import Link from "next/link";
@@ -7,7 +8,7 @@ import navbarItems from "../constants/navbarItems";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="flex items-center justify-between h-1/5 md:h-1/4 font-roboto w-full">
+    <nav className="flex items-center justify-between h-1/5 md:h-1/4 font-mono w-full">
       <div className="lg:basis-3/4 flex items-center justify-start">
         <Link href="/" passHref>
           <Ufo className="mr-4" height={50} />

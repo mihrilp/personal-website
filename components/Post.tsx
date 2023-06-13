@@ -11,7 +11,7 @@ type Props = {
 function Post({ title, date, description, reactionsCount }: Props) {
   return (
     <a className="group flex-1 flex flex-col justify-between cursor-pointer py-7 first-of-type:pt-0">
-      <h2 className="text-xl font-semibold font-roboto group-hover:text-purple mb-3">
+      <h2 className="text-xl font-semibold font-mono group-hover:text-purple mb-3">
         {title}
       </h2>
       <div className="flex flex-row items-center space-x-6 mb-2">
