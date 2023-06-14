@@ -2,7 +2,7 @@
 import { Post } from "@/components";
 
 type Post = {
-  slug: string;
+  id: string;
   title: string;
   description: string;
   readable_publish_date: string;
@@ -22,13 +22,13 @@ async function getPosts() {
 
 export default async function Blog() {
   const posts = await getPosts();
-
   return (
     <div className="flex flex-col justify-between items-center">
       <div className="flex flex-col border-b border-gray border-opacity-70 w-full">
         {posts.map((post: Post) => (
           <Post
-            key={post.slug}
+            key={post.id}
+            id={post.id}
             title={post.title}
             date={post.readable_publish_date}
             description={post.description}
