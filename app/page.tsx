@@ -15,7 +15,7 @@ const Home = () => {
           <h2 className="font-bold text-2xl  md:text-3xl mb-7 font-mono">
             a Software Engineer
           </h2>
-          <p className="text-lg font-light text-lightgray leading-8 ">
+          <p className="text-lg font-light text-lightgray leading-8">
             currently working at{" "}
             <a
               className="underline"

@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     colors: {
       darkblue: "#0f141a",
-      gray: "#253241",
+      gray: "#222c39",
     },
     fontFamily: {
       mono: ["var(--font-roboto-mono)"],

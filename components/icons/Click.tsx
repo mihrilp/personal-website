@@ -5,7 +5,7 @@ const SvgClick = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
-    fill="#5b5c63"
+    fill="currentColor"
     className="click_svg__clickIcon"
     {...props}
   >

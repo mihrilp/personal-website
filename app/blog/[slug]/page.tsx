@@ -1,5 +1,7 @@
 import { Title } from "@/components";
+import { Click } from "@/components/icons";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import Image from "next/image";
 
 async function getPost(id: string) {
   const res = await fetch(`https://dev.to/api/articles/${id}`);
@@ -7,17 +9,55 @@ async function getPost(id: string) {
   return post;
 }
 
-const imageLoader = ({ src, width, quality }) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
+const Heading = (props) => <h4 className="text-lg mb-2" {...props} />;
+const Text = (props) => (
+  <p className="text-lg font-light text-lightgray leading-8" {...props} />
+);
+const Pre = (props) => (
+  <pre
+    className="bg-gray rounded-md p-4 w-full overflow-auto my-4"
+    {...props}
+  />
+);
+const Anchor = (props) => <a className="text-white" {...props} />;
+const ResponsiveImage = (props) => (
+  <Image
+    className="w-full h-auto my-4 rounded-md"
+    width="0"
+    height="0"
+    sizes="100vw"
+    alt={props.alt}
+    {...props}
+  />
+);
+
+const components = {
+  h4: Heading,
+  p: Text,
+  pre: Pre,
+  a: Anchor,
+  img: ResponsiveImage,
 };
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function PostPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const post = await getPost(params.slug);
   return (
-    <div className="">
+    <div>
       <Title text={post.title} />
       {/* @ts-expect-error Server Component */}
-      <MDXRemote source={post.body_markdown} />
+      <MDXRemote source={post.body_markdown} components={components} />
+      <a
+        className="flex flex-row gap-2 mt-4 text-lg text-purple"
+        href="https://dev.to/mihrilp"
+        target="_blank"
+      >
+        <p>Follow me on DEV.to </p>
+        <Click height={25} fill="#b892ff" />
+      </a>
     </div>
   );
 }
