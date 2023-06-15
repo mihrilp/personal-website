@@ -4,6 +4,7 @@ import { Navbar } from "../components";
 import { usePathname } from "next/navigation";
 import { Roboto_Mono } from "next/font/google";
 import { Suspense } from "react";
+import Loading from "./loading";
 
 const paths = ["/", "/about", "/blog", "/projects"];
 
@@ -30,7 +31,7 @@ export default function RootLayout({
           {(paths.includes(pathname) || pathname.startsWith("/blog/")) && (
             <Navbar />
           )}
-          <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+          <Suspense fallback={<Loading />}>{children}</Suspense>
         </div>
       </body>
     </html>
