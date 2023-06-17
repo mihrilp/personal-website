@@ -27,7 +27,7 @@ export default function RootLayout({
         <title>Mihriban Alp</title>
       </head>
       <body className="box-border flex flex-col items-center h-screen bg-darkblue text-white overflow-auto">
-        <div className="w-5/6 lg:w-4/6 h-full">
+        <div className="w-11/12 md:w-5/6 lg:w-4/6 h-full">
           {(paths.includes(pathname) || pathname.startsWith("/blog/")) && (
             <Navbar />
           )}

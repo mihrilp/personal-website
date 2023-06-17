@@ -1,12 +1,20 @@
 "use client";
-import { useState } from "react";
-import { Cross, Space, Spaceship, Telescope, Ufo, VulcanSalute } from "./icons";
+import { useState, useEffect } from "react";
+import { Cross, Telescope, Ufo, VulcanSalute } from "./icons";
 import Link from "next/link";
 import NavItem from "./NavItem";
 import navbarItems from "../constants/navbarItems";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const url = `${pathname}`;
+    setMenuOpen(false);
+  }, [pathname]);
+
   return (
     <nav className="flex items-center justify-between h-1/5 md:h-1/4 font-mono w-full">
       <div className="lg:basis-3/4 flex items-center justify-start">

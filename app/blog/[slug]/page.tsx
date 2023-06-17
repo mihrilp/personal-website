@@ -47,6 +47,14 @@ export default async function PostPage({
   const post = await getPost(params.slug);
   return (
     <div>
+      <Image
+        className="w-full h-auto mb-7 rounded-md"
+        src={post.cover_image}
+        alt="cover image"
+        width="0"
+        height="0"
+        sizes="100vw"
+      />
       <Title text={post.title} />
       {/* @ts-expect-error Server Component */}
       <MDXRemote source={post.body_markdown} components={components} />
