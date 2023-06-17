@@ -24,6 +24,7 @@ function Project({ name, description, code, production }: Props) {
           className="text-lightgray hover:text-white"
           href={code}
           target="_blank"
+          aria-label="go to github repo"
         >
           <Github height={20} />
         </a>
@@ -31,6 +32,7 @@ function Project({ name, description, code, production }: Props) {
           className="text-lightgray hover:text-white"
           href={production}
           target="_blank"
+          aria-label="go to production"
         >
           <ExternalLink height={20} />
         </a>

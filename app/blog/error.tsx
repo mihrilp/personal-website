@@ -17,7 +17,11 @@ export default function Error({
       </p>
       <div>
         <span className="text-xl mr-2"> Please</span>
-        <button className="text-xl text-purple" onClick={() => reset()}>
+        <button
+          className="text-xl text-purple"
+          onClick={() => reset()}
+          aria-label="reset"
+        >
           Launch Again
         </button>
       </div>

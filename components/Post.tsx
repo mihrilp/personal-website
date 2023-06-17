@@ -16,6 +16,7 @@ function Post({ id, title, date, description, reactionsCount }: Props) {
     <Link
       className="group flex-1 flex flex-col justify-between cursor-pointer py-7 first-of-type:pt-0"
       href={`/blog/${id}`}
+      aria-label="go to post"
     >
       <Title text={title} />
       <div className="flex flex-row items-center space-x-6 mb-4">

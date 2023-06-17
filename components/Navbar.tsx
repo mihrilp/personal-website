@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className="flex items-center justify-between h-1/5 md:h-1/4 font-mono w-full">
       <div className="lg:basis-3/4 flex items-center justify-start">
-        <Link href="/" passHref>
+        <Link href="/" passHref aria-label="home">
           <Ufo className="mr-4" height={50} />
         </Link>
         <h2 className="flex text-xl md:hidden">mihri.dev</h2>
@@ -31,10 +31,15 @@ export default function Navbar() {
       <a
         className="hidden md:flex lg:basis-1/4 items-center justify-end text-lg font-thin"
         href="mailto: mihrilp@gmail.com"
+        aria-label="contact me"
       >
         Let&apos;s Meet <VulcanSalute height={40} className="pl-4" />
       </a>
-      <button className="flex md:hidden" onClick={() => setMenuOpen(true)}>
+      <button
+        className="flex md:hidden"
+        onClick={() => setMenuOpen(true)}
+        aria-label="open menu"
+      >
         <Telescope height={43} />
       </button>
       {/* mobile menu */}
@@ -45,7 +50,11 @@ export default function Navbar() {
             : "hidden"
         }`}
       >
-        <button className="absolute right-5" onClick={() => setMenuOpen(false)}>
+        <button
+          className="absolute right-5"
+          onClick={() => setMenuOpen(false)}
+          aria-label="close menu"
+        >
           <Cross height={40} />
         </button>
         <div className="flex flex-col items-center gap-4 mt-20">
@@ -56,6 +65,7 @@ export default function Navbar() {
           <a
             className="no-underline cursor-pointer text-lg font-thin"
             href="mailto: mihrilp@gmail.com"
+            aria-label="contact me"
           >
             Let&apos;s Meet
           </a>

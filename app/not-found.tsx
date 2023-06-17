@@ -13,7 +13,7 @@ function Custom404() {
       </p>
       <p className="text-xl mb-7 text-white">
         But don&apos;t worry you are safe!{" "}
-        <Link className="text-purple" href="/">
+        <Link className="text-purple" href="/" aria-label="go back home">
           Go back home
         </Link>
       </p>

@@ -22,6 +22,7 @@ const Home = () => {
               href="https://www.appcent.mobi/"
               target="_blank"
               rel="noreferrer"
+              aria-label="go to appcent website"
             >
               Appcent
             </a>

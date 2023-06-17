@@ -62,6 +62,7 @@ export default async function PostPage({
         className="flex flex-row gap-2 mt-4 text-lg text-purple"
         href="https://dev.to/mihrilp"
         target="_blank"
+        aria-label="go to dev.to"
       >
         <p>Follow me on DEV.to </p>
         <Click height={25} fill="#b892ff" />

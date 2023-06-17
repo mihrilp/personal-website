@@ -11,6 +11,7 @@ const NavItem = ({ href, pageName }: Props) => {
       className="no-underline cursor-pointer text-lg font-thin"
       href={href}
       passHref
+      aria-label="go to page"
     >
       {pageName}
     </Link>

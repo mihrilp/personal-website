@@ -25,6 +25,10 @@ export default function RootLayout({
     <html lang="en" className={`${roboto_mono.variable}`}>
       <head>
         <title>Mihriban Alp</title>
+        <meta
+          name="description"
+          content="Browse my portfolio to explore my work and skills in software development."
+        />
       </head>
       <body className="box-border flex flex-col items-center h-screen bg-darkblue text-white overflow-auto">
         <div className="w-11/12 md:w-5/6 lg:w-4/6 h-full">

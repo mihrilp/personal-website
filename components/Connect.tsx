@@ -8,6 +8,7 @@ function Connect() {
         className="text-lightgray hover:text-white"
         href="https://github.com/mihrilp"
         target="blank"
+        aria-label="go to github profile"
       >
         <Icons.Github height={25} />
       </a>
@@ -15,6 +16,7 @@ function Connect() {
         className="text-lightgray hover:text-white"
         href="https://www.linkedin.com/in/mihribanalp/"
         target="blank"
+        aria-label="go to linkedin profile"
       >
         <Icons.Linkedin height={25} />
       </a>
@@ -22,6 +24,7 @@ function Connect() {
         className="text-lightgray hover:text-white"
         href="https://dev.to/mihrilp"
         target="blank"
+        aria-label="go to dev.to profile"
       >
         <Icons.Devto height={25} />
       </a>
@@ -29,6 +32,7 @@ function Connect() {
         className="text-lightgray hover:text-white"
         href="https://twitter.com/mihriinspace"
         target="blank"
+        aria-label="go to twitter profile"
       >
         <Icons.Twitter height={25} />
       </a>
@@ -36,6 +40,7 @@ function Connect() {
         className="text-lightgray hover:text-white"
         href="https://open.spotify.com/user/cl13omk222r2v8e3l70oxn6q8"
         target="blank"
+        aria-label="go to spotify profile"
       >
         <Icons.Spotify height={25} />
       </a>
