@@ -12,7 +12,7 @@ function About() {
         ))}
       </div>
       <Title text="Skills" />
-      <div className="flex flex-wrap border border-gray rounded-md p-5">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 border border-gray rounded-md p-5">
         {skills.map((skill) => (
           <Skill key={skill.id} name={skill.name} icon={skill.icon} />
         ))}

@@ -21,7 +21,7 @@ function Experience({ title, company, positions }: Props) {
       <ul className="ml-1 flex flex-row">
         {positions.map((position, index) => (
           <li key={index} className="flex flex-row items-start font-light">
-            <div className="flex flex-col items-center mx-3">
+            <div className="flex flex-col items-start mx-3">
               <time className="text-sm mb-1 text-white">{position.time}</time>
               <p className="text-sm text-lightgray">({position.jobType})</p>
             </div>

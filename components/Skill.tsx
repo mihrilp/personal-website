@@ -7,8 +7,8 @@ type Props = {
 
 function Skill({ name, icon }: Props) {
   return (
-    <div className="flex w-1/6 mb-4">
-      {icon}
+    <div className="flex items-center mb-4">
+      <div className="w-6 h-6">{icon}</div>
       <p className="ml-2 text-sm">{name}</p>
     </div>
   );
