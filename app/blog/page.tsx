@@ -10,14 +10,10 @@ type Post = {
 };
 
 async function getPosts() {
-  try {
-    const username = "mihrilp";
-    const res = await fetch(`https://dev.to/api/articles?username=${username}`);
-    const posts = await res.json();
-    return posts;
-  } catch (error) {
-    console.error("Error occurred while retrieving blog posts.", error);
-  }
+  const username = "mihrilp";
+  const res = await fetch(`https://dev.to/api/articles?username=${username}`);
+  const posts = await res.json();
+  return posts;
 }
 
 export default async function Blog() {
@@ -25,7 +21,7 @@ export default async function Blog() {
   return (
     <div className="flex flex-col justify-between items-center">
       <div className="flex flex-col border-b border-gray border-opacity-70 w-full">
-        {posts.map((post: Post) => (
+        {posts?.map((post: Post) => (
           <Post
             key={post.id}
             id={post.id}
