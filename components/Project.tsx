@@ -12,8 +12,8 @@ type Props = {
 
 function Project({ name, description, code, production }: Props) {
   return (
-    <div className="group border border-gray border-opacity-80 flex-1 flex flex-col justify-between rounded-md p-5">
-      <div className="flex flex-col justify-center items-center">
+    <div className="group border border-gray border-opacity-80 flex flex-col justify-between rounded-md p-5">
+      <div className="flex flex-col justify-center items-center text-center">
         <Title text={name} />
         <p className="text-justify text-sm text-lightgray leading-6">
           {description}
