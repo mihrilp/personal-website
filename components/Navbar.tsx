@@ -45,7 +45,7 @@ export default function Navbar() {
       <div
         className={`${
           mobileMenuOpen
-            ? "flex flex-col items-center h-screen w-4/6 border-l border-gray border-opacity-80 absolute right-0 top-0 z-10 bg-darkblue pt-10 "
+            ? "flex flex-col items-center h-screen w-4/6 border-l-2 border-gray border-opacity-80 absolute right-0 top-0 z-10 pt-10 bg-gradient-to-br from-darkblue to-gray shadow-lg shadow-darkblue"
             : "hidden"
         }`}
       >
@@ -56,7 +56,7 @@ export default function Navbar() {
         >
           <Cross height={40} />
         </button>
-        <div className="flex flex-col items-center gap-4 mt-20">
+        <div className="flex flex-col items-center gap-4 mt-32">
           <NavItem href="/" pageName="Home" />
           {navbarItems.map((item) => (
             <NavItem key={item.id} href={item.url} pageName={item.name} />
