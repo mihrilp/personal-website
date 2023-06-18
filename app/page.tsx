@@ -3,7 +3,7 @@ import { Space } from "../components/icons";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-7 md:gap-12">
+    <div className="flex flex-col gap-7 md:gap-12 pb-8">
       <div className="flex flex-col md:flex-row items-center">
         <div className="text-left flex-2 order-2 md:order-1">
           <p className="mb-5 text-lg font-light text-lightgray">

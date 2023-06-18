@@ -12,14 +12,14 @@ type Props = {
 
 function Project({ name, description, code, production }: Props) {
   return (
-    <div className="group border border-gray border-opacity-80 flex flex-col justify-between rounded-md p-5">
+    <div className="border border-gray border-opacity-80 flex flex-col justify-between rounded-md p-5">
       <div className="flex flex-col justify-center items-center text-center">
         <Title text={name} />
         <p className="text-justify text-sm text-lightgray leading-6">
           {description}
         </p>
       </div>
-      <div className="flex flex-row justify-center w-full mt-2 space-x-3">
+      <div className="flex flex-row justify-center w-full space-x-3 mt-4">
         <a
           className="text-lightgray hover:text-white"
           href={code}

@@ -7,12 +7,11 @@ import navbarItems from "../constants/navbarItems";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    const url = `${pathname}`;
-    setMenuOpen(false);
+    setMobileMenuOpen(false);
   }, [pathname]);
 
   return (
@@ -37,7 +36,7 @@ export default function Navbar() {
       </a>
       <button
         className="flex md:hidden"
-        onClick={() => setMenuOpen(true)}
+        onClick={() => setMobileMenuOpen(true)}
         aria-label="open menu"
       >
         <Telescope height={43} />
@@ -45,14 +44,14 @@ export default function Navbar() {
       {/* mobile menu */}
       <div
         className={`${
-          menuOpen
+          mobileMenuOpen
             ? "flex flex-col items-center h-screen w-4/6 border-l border-gray border-opacity-80 absolute right-0 top-0 z-10 bg-darkblue pt-10 "
             : "hidden"
         }`}
       >
         <button
           className="absolute right-5"
-          onClick={() => setMenuOpen(false)}
+          onClick={() => setMobileMenuOpen(false)}
           aria-label="close menu"
         >
           <Cross height={40} />

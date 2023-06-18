@@ -46,7 +46,7 @@ export default async function PostPage({
 }) {
   const post = await getPost(params.slug);
   return (
-    <div>
+    <div className="pb-8">
       <Image
         className="w-full h-auto mb-7 rounded-md"
         src={post.cover_image}
