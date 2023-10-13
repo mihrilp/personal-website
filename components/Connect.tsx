@@ -10,7 +10,7 @@ function Connect() {
         target="blank"
         aria-label="go to github profile"
       >
-        <Icons.Github height={25} />
+        <Icons.Github height={20} />
       </a>
       <a
         className="text-lightgray hover:text-white"
@@ -18,7 +18,7 @@ function Connect() {
         target="blank"
         aria-label="go to linkedin profile"
       >
-        <Icons.Linkedin height={25} />
+        <Icons.Linkedin height={20} />
       </a>
       <a
         className="text-lightgray hover:text-white"
@@ -26,7 +26,7 @@ function Connect() {
         target="blank"
         aria-label="go to dev.to profile"
       >
-        <Icons.Devto height={25} />
+        <Icons.Devto height={20} />
       </a>
       <a
         className="text-lightgray hover:text-white"
@@ -34,7 +34,7 @@ function Connect() {
         target="blank"
         aria-label="go to twitter profile"
       >
-        <Icons.Twitter height={25} />
+        <Icons.Twitter height={20} />
       </a>
       <a
         className="text-lightgray hover:text-white"
@@ -42,7 +42,7 @@ function Connect() {
         target="blank"
         aria-label="go to spotify profile"
       >
-        <Icons.Spotify height={25} />
+        <Icons.Spotify height={20} />
       </a>
     </div>
   );

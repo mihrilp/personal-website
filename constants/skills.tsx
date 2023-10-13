@@ -28,23 +28,23 @@ const skills = [
   },
   {
     id: 6,
+    name: "Tailwind CSS",
+    icon: <Icons.Tailwind />,
+  },
+  {
+    id: 7,
     name: "HTML",
     icon: <Icons.Html />,
   },
   {
-    id: 7,
+    id: 8,
     name: "CSS",
     icon: <Icons.Css />,
   },
   {
-    id: 8,
+    id: 9,
     name: "Sass",
     icon: <Icons.Sass />,
-  },
-  {
-    id: 9,
-    name: "Tailwind CSS",
-    icon: <Icons.Tailwind />,
   },
   {
     id: 10,
