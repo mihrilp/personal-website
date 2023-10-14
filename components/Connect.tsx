@@ -18,7 +18,7 @@ function Connect() {
         target="blank"
         aria-label="go to linkedin profile"
       >
-        <Icons.Linkedin height={20} />
+        <Icons.Linkedin height={21} />
       </a>
       <a
         className="text-lightgray hover:text-white"
@@ -42,7 +42,15 @@ function Connect() {
         target="blank"
         aria-label="go to spotify profile"
       >
-        <Icons.Spotify height={20} />
+        <Icons.Spotify height={22} />
+      </a>
+      <a
+        className="text-lightgray hover:text-white"
+        href="https://discord.com/users/696604099331751966"
+        target="blank"
+        aria-label="go to discord profile"
+      >
+        <Icons.Discord height={24} />
       </a>
     </div>
   );
